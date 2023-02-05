@@ -2684,7 +2684,7 @@ a{
 
 @media (max-width: 576px) {
     .nav {
-    padding: 1.5rem;
+    margin: 1.5rem;
     }
     .header-content__title {
         font-size: 12rem;
