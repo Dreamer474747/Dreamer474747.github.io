@@ -20,7 +20,10 @@ i used flexbox to make it full responsive(from 320px to higher widths). i have a
 
 i have used "Teko", "Roboto" and "Nunito" font for this project.
 
-Contact me at:
+# Contact me at:
 
-mobin77tataghi@gmail.com
+[Telegram](https://t.me/Dreamer474747)
 
+[Instagram](https://instagram.com/mobintaataghi)
+
+[Linkedin](https://linkedin.com/in/mobin-taataghi-b6bb9b227)
