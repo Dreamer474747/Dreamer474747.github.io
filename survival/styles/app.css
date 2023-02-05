@@ -709,6 +709,10 @@ a{
     
 }
 
+.nav__app-logo{
+	
+}
+
 .nav-wrapper{
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1203,8 +1207,8 @@ a{
     -webkit-transform: translateY(5px)scale(1.01);
         -ms-transform: translateY(5px)scale(1.01);
             transform: translateY(5px)scale(1.01);
-    -webkit-box-shadow: 0 0 20px 0px;
-            box-shadow: 0 0 20px 0px;
+    -webkit-box-shadow: 0 0 20px -5px;
+            box-shadow: 0 0 20px -5px;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
@@ -2686,6 +2690,9 @@ a{
     .nav{
     	padding: 0 1.5rem;
     }
+	.nav__app-logo{
+		width: 16rem;
+	}
     .header-content__title {
         font-size: 12rem;
         line-height: 10rem;
