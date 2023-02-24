@@ -1,0 +1,466 @@
+@media (max-width: 1530px) {
+    .footer-right__bottom-part{
+        flex-direction: column;
+        position: relative;
+    }
+    .footer-right__signature{
+        position: absolute;
+        top: 10.4rem;
+    }
+    
+}
+
+@media (max-width: 1460px) {
+    .footer-right__top-part{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .footer-right__list {
+        display: flex;
+    }
+    .footer-right__item{
+        margin: 6rem 1.9rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header-content{
+        padding-left: 0;
+    }
+    .introduction__img-wrapper{
+        display: none;
+    }
+    .introduction__bottom-part{
+        margin: 22rem auto 0;
+    }
+    .products{
+        flex-direction: column-reverse;
+    }
+    .products__left{
+        width: 100%;
+        padding-right: 0;
+    }
+    .product{
+        align-items: center;
+    }
+    .product__property, .product__type{
+        margin-left: 0;
+    }
+    .product__bloom-img{
+        margin-top: 0;
+    }
+    .products__right{
+        align-items: unset;
+        justify-content: center;
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 10rem;
+    }
+    .product__foscarini-img{
+        height: 85vh;
+    }
+    .brands{
+        width: 100%;
+    }
+    .brands__vibia-lamp-img{
+        visibility: hidden;
+    }
+    .brands__info{
+        padding: 0 3rem 8rem;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-left{
+        justify-content: space-around;
+        width: 100%;
+    }
+    .footer-right{
+        width: 100%;
+        padding: 8rem 6rem 0;
+        min-height: 57rem;
+    }
+    .footer-right__top-part{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer-right__list {
+        display: block;
+    }
+    .footer-right__item {
+        margin: 6rem 0rem;
+    }
+    .footer-right__bottom-part {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 5.3rem;
+    }
+    .footer-right__signature {
+        position: static;
+    }
+}
+
+@media (max-width: 1200px) {
+    .introduction{
+        padding-top: 10rem;
+    }
+    .introduction__items{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .introduction-product{
+        margin-top: 0;
+    }
+    .introduction-info__news{
+        display: none;
+    }
+    .brands__arrow-top{
+        top: -0.7rem;
+    }
+}
+
+@media (max-width: 1067px) {
+    .brands__info{
+        padding: 0 3rem 7rem;
+    }
+    .footer-left{
+        justify-content: space-between;
+        padding: 9rem 6rem 11rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-content{
+        display: block;
+        padding-top: 30rem;
+    }
+    .case-study{
+        margin: 0 auto;
+    }
+    .header-content__play-btn{
+        display: none;
+    }
+    .nav, .slider{
+        display: none;
+    }
+    .introduction-info{
+        margin-top: auto;
+    }
+    .introduction__bottom-part {
+        margin: 15rem auto 0;
+    }
+    .product__foscarini-img{
+        height: 100%;
+        width: 80%;
+    }
+	.product--border-left, .product--border-top-and-left{
+		border: none;
+	}
+	.product{
+		width: 100%;
+		border-top: 1px solid #000;
+	}
+	.product__bloom{
+		display: none;
+	}
+	.product__property{
+		font-size: 2rem;
+	}
+	.product__type {
+    font-size: 2.7rem;
+	}
+    .brands > div{
+        width: 50%;
+    }
+    .brands__info {
+        padding: 0 5rem 8rem 3rem;
+    }
+    .brands__brand{
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .brands__brand--four-brand{
+        pointer-events: none;
+    }
+    .brands__arrow-top {
+        top: -0.8rem;
+    }
+    .brands__arrow-right{
+        right: -0.2rem;
+    }
+    .brands__img-wrapper, .brands__empty-space--responsive, .brands__vibia-lamp-img{
+        display: none !important;
+    }
+    .brands__brand--border-right{
+        border-right: 1px solid #000;
+    }
+    .brands__msds-lamp-img{
+        display: none;
+    }
+    .footer{
+        margin-top: 20rem;
+    }
+    .footer-right__top-part {
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+    .footer-right{
+        min-height: 48rem;
+    }
+    .footer-right__list {
+        display: flex;
+    }
+    .footer-right__item {
+        margin: 6rem 2.3rem;
+    }
+    .footer-right__bottom-part{
+        flex-direction: column;
+    }
+    .footer-right__signature{
+        position: absolute;
+        top: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .introduction-info{
+        padding: 6rem 5rem 0 4rem;
+        min-height: 37rem;
+    }
+    .introduction-info__description{
+        margin-bottom: 5rem;
+    }
+    .introduction__bottom-part{
+        justify-content: center;
+    }
+    .introduction__orange-strip{
+        display: none;
+    }
+    .introduction__bottom-part {
+        margin: 10rem auto 0;
+    }
+	.product__property{
+		font-size: 1.8rem;
+	}
+	.product__type {
+		font-size: 2.3rem;
+	}
+    .brands__info {
+        padding: 0 5rem 7rem 3rem;
+    }
+    .footer {
+        margin-top: 15rem;
+    }
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-left__social-logos-and-description-wrapper {
+        margin-top: 4rem;
+    }
+    .footer-left__description {
+        max-width: 24.3rem;
+    }
+    .footer-left__social-logos{
+        max-width: 100%;
+    }
+    .footer-right__list{
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-right__item{
+        margin: 6rem 6rem -2rem;
+        flex-grow: 1;
+    }
+    .footer-right__bottom-part{
+        padding: 0;
+    }
+    .footer-right__services {
+        display: block;
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .footer-right__service {
+        margin: 6rem 0 -2rem;
+    }
+    .footer-right__services #the-wall{
+        display: none;
+    }
+    .footer-right__signature{
+        position: static;
+        margin-top: 15rem;
+    }
+}
+
+@media (max-width: 586px) {
+    .brands__info {
+        padding: 0 5rem 6rem 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .app-logo{
+        height: 14.7rem;
+    }
+    .app-logo__wrapper{
+        padding-top: 6rem;
+    }
+    .case-study{
+        width: unset;
+        max-width: 32rem;
+    }
+    .case-study__museum-name{
+        font-size: 2.4rem;
+    }
+    .introduction-info__title{
+        font-size: 2.5rem;
+    }
+    .introduction-info__numbers{
+        width: 25%;
+        min-height: 6rem;
+    }
+    .introduction-product__img {
+        width: 100%;
+    }
+    .introduction__description{
+        font-size: 2.2rem;
+		text-align: center;
+    }
+	.product__property{
+		font-size: 1.6rem;
+	}
+    .footer {
+        margin-top: 10rem;
+    }
+    .news-letter__mailing-count, .news-letter__description{
+        line-height: 2rem;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .introduction-info{
+        padding: 4rem 3rem 0 3rem;
+    }
+    .introduction-info__title {
+        font-size: 2.3rem;
+    }
+    .introduction-info__read-more{
+        max-width: 13rem;
+        min-height: 5rem;
+        line-height: 5rem;
+    }
+    .introduction-info__numbers{
+        width: 30%;
+        min-height: 5rem;
+    }
+    .introduction__description{
+        font-size: 2.1rem;
+    }
+	.product__foscarini-img {
+		width: 100%;
+	}
+	.product{
+		height: 48rem;
+	}
+	.product__type {
+		font-size: 2rem;
+	}
+	.product__img--1{
+		width: 21rem;
+	}
+	.product__img--2{
+		width: 29rem;
+	}
+	.product__img--3{
+		width: 8rem;
+	}
+    .brands > div {
+        width: 100%;
+    }
+    .brands__empty-space {
+        display: none !important;
+    }
+    .brands__info {
+        padding: 0 5rem 8rem 3rem;
+        text-align: center;
+    }
+    .brands__orange-strip{
+        display: none;
+    }
+    .brands__title{
+        margin: 0 auto;
+    }
+    .brands__brand--border-right{
+        border: none;
+    }
+    .news-letter{
+        width: 100%;
+    }
+    .news-letter__input, .news-letter__btn{
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .introduction-info {
+        padding: 4rem 2rem 0 2rem;
+    }
+    .introduction-info__title {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .introduction-info__description {
+        margin: 1rem 0 3rem;
+    }
+    .introduction-info__numbers {
+        width: 36%;
+    }
+	.product__type {
+		font-size: 1.7rem;
+	}
+    .brands__info {
+        padding: 0 5rem 7rem 3rem;
+    }
+    .footer-left {
+        justify-content: space-between;
+        padding: 7rem 4rem;
+    }
+    .footer-left__logo-svg{
+        width: 100%;
+    }
+    .footer-left__logo-description{
+        right: -25rem;
+        bottom: 29.8rem;
+    }
+    .footer-left__social-logos-and-description-wrapper {
+        margin-top: 1rem;
+    }
+    .footer-left__logo-wrapper{
+        min-height: 73rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .mobile-nav-wrapper, .nav-btn-wrapper{
+        display: none;
+    }
+}
+
+@media (min-width: 1340px) {
+    .product__bloom-description{
+        bottom: 1rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .product__property{
+		font-size: 2rem;
+	}
+    .product__bloom-description{
+        bottom: 2rem;
+    }
+}
