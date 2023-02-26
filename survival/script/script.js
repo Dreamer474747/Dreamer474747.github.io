@@ -43,14 +43,14 @@ removalElem.addEventListener('click', function() {
 
 headerNumbers.forEach(function(number) {
     number.addEventListener('click', function(event) {
-        headerNumbersIndex = event.target.id
+        headerNumbersIndex = event.target.dataset.number
         headerNumbers.forEach(function(num) {
             if (num.classList.contains('header-content__number--selected')) {
                 num.classList.remove('header-content__number--selected')
             }
         })
         event.target.classList.add('header-content__number--selected')
-        // console.log(event.target.id)
+        console.log(event.target.dataset.number)
     })
 })
 
@@ -84,7 +84,7 @@ prevBtnElem.addEventListener('click', function() {
 
 adviceNumbers.forEach(function(adviceNumber) {
     adviceNumber.addEventListener('click', function(event) {
-        adviceNumbersIndex = event.target.id
+        adviceNumbersIndex = event.target.dataset.number
         adviceNumbers.forEach(function(adviceNum) {
             if (adviceNum.classList.contains('advice__number--selected')) {
                 adviceNum.classList.remove('advice__number--selected')
