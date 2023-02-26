@@ -41,6 +41,19 @@ removalElem.addEventListener('click', function() {
 })
 
 
+headerNumbers.forEach(function(number) {
+    number.addEventListener('click', function(event) {
+        headerNumbersIndex = event.target.id
+        headerNumbers.forEach(function(num) {
+            if (num.classList.contains('header-content__number--selected')) {
+                num.classList.remove('header-content__number--selected')
+            }
+        })
+        event.target.classList.add('header-content__number--selected')
+        // console.log(event.target.id)
+    })
+})
+
 nextBtnElem.addEventListener('click', function() {
     headerNumbersIndex++
     if (headerNumbersIndex > headerNumbers.length - 1) {
@@ -55,6 +68,7 @@ nextBtnElem.addEventListener('click', function() {
     
 })
 
+
 prevBtnElem.addEventListener('click', function() {
     headerNumbersIndex--
     if (headerNumbersIndex < 0) {
@@ -66,6 +80,18 @@ prevBtnElem.addEventListener('click', function() {
         }
     })
     headerNumbers[headerNumbersIndex].classList.add('header-content__number--selected')
+})
+
+adviceNumbers.forEach(function(adviceNumber) {
+    adviceNumber.addEventListener('click', function(event) {
+        adviceNumbersIndex = event.target.id
+        adviceNumbers.forEach(function(adviceNum) {
+            if (adviceNum.classList.contains('advice__number--selected')) {
+                adviceNum.classList.remove('advice__number--selected')
+            }
+        })
+        event.target.classList.add('advice__number--selected')
+    })
 })
 
 adviceNextBtn.addEventListener('click', function() {

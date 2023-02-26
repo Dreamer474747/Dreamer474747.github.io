@@ -1099,6 +1099,10 @@ a{
     padding: 2rem 0;
 }
 
+.header-content__number:not(.header-content__number--selected){
+    cursor: pointer;
+}
+
 .header-content__number--selected{
     font-size: 6rem;
     margin: 2.8rem 0;
@@ -1563,6 +1567,7 @@ a{
     letter-spacing: 0.1rem;
     line-height: 2rem;
     text-transform: uppercase;
+    margin-left: 0;
 }
 
 /*
@@ -1699,6 +1704,10 @@ a{
 .advice__number{
     font-size: 1.7rem;
     line-height: 1rem;
+}
+
+.advice__number:not(.advice__number--selected){
+    cursor: pointer;
 }
 
 .advice__number--selected{
@@ -2361,6 +2370,9 @@ a{
     .results-right {
         padding: 12rem 1rem 2rem 4rem;
     }
+    .results-right__description{
+        font-size: 3.2rem;
+    }
 	.advice__button-next, .advice__button-prev {
     width: 5.5rem;
     height: 5.5rem;
@@ -2566,7 +2578,7 @@ a{
                 align-items: flex-start;
     }
     .footer-content__social-media-wrapper{
-        margin-top: 2rem;
+        display: none;
     }
     .footer-content__up-arrow{
         top: 1rem;
@@ -2600,6 +2612,9 @@ a{
     }
     .results__chance-percent{
         margin: -5rem 0 -11rem;
+    }
+    .results-right__description {
+        font-size: 3rem;
     }
 	.advice__title {
     font-size: 10rem;
@@ -2718,12 +2733,15 @@ a{
     .results-right__title{
         font-size: 5.3rem;
     }
-    .results-right__description{
-        font-size: 3.2rem;
+    .results-right__description {
+        font-size: 2.9rem;
     }
 	.advice__title {
 		font-size: 8rem;
 	}
+    .advice__numbers-wrapper{
+        padding: 1rem 2rem 0.5rem;
+    }
     .gallery-info__title{
         font-size: 8rem;
     }
@@ -2756,17 +2774,29 @@ a{
     }
     .results {
         height: 75rem;
-        margin-top: 39rem;
+        margin-top: 42rem;
     }
     #mission {
         width: 63%;
     }
     .results-right__title {
-        font-size: 4.01rem;
+        font-size: 4rem;
+    }
+    .results-right__description {
+        font-size: 2.5rem;
+    }
+    #results-right{
+        font-size: 1.4rem;
     }
     .advice__number--selected {
     line-height: 2.5rem;
 	}
+}
+
+@media (max-width: 450px){
+    .results {
+        margin-top: 39rem;
+    }
 }
 
 @media (max-width: 425px) {
@@ -2799,7 +2829,7 @@ a{
     }
     .results{
         height: 77rem;
-        margin-top: 40rem;
+        margin-top: 32rem;
     }
     .results-right {
         padding: 18rem 1rem 2rem 3rem;
@@ -2811,26 +2841,23 @@ a{
         line-height: 3.5rem;
     }
     .results-right__description {
-        font-size: 2.3rem;
+        font-size: 2rem;
         line-height: 3rem;
     }
     #results-right-div{
         display: none;
     }
-	.advice__numbers-wrapper {
-		padding: 1rem 2rem 0.5rem;
-	}
-	.advice__number--selected {
-		font-size: 3rem;
-		line-height: 2rem;
-	}
-	.advice__number--selected::after {
-		left: -1rem;
-		width: 4rem;
+	.advice__numbers-wrapper, .advice__buttons {
+		display: none;
 	}
 	.advice__title {
 		font-size: 7rem;
 	}
+}
+@media (max-width: 400px){
+    .results {
+        margin-top: 35rem;
+    }
 }
 
 @media (min-width: 576px) {
