@@ -1,5 +1,5 @@
 # Project description
-This clock project is a simple and elegant implementation of an analog clock using HTML, CSS, and JavaScript. The clock displays the current time and updates in real-time. The hour, minute, and second hands are displayed on the clock face, and the clock also includes numerals to indicate the hours. The clock design features a minimalist black and white color scheme, and the clock face and hands are given a subtle shadow effect to give it a sense of depth.
+This clock project is a simple and interactive web application that displays the current time using hour, minute, and second hands. The clock is designed with a sleek and minimalistic aesthetic, featuring a black and white color scheme with a red second hand. The numbers on the clock face are also displayed in a clean and easy-to-read font. The clock is built using HTML, CSS, and JavaScript, and is fully responsive, meaning it works well on a range of devices and screen sizes. This project is a great example of how to create an attractive and functional clock using basic web development skills.
 
 # Screen shots
 ![App Screenshot](https://github.com/Dreamer474747/Dreamer474747.github.io/blob/main/clock/screen%20shot.PNG?raw=true)
