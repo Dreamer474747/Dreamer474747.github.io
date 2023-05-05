@@ -76,7 +76,8 @@ body {
 }
 
 *>.clock__number-holder {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 19px;
 }
 
 .clock__number-holder-one {
