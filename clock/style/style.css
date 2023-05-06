@@ -17,7 +17,8 @@ body {
 	margin: 0 auto;
 	color: #fff;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 25px;
+	font-size: 23px;
+	text-align: center;
 }
 
 /*
@@ -216,11 +217,16 @@ body {
   margin: 3rem auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
+  text-align: center;
 }
 
 
 
-
+@media (max-width: 600px) {
+	.how-much-time-left-description {
+		font-size: 19px;
+	}
+}
 
 
 

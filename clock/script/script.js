@@ -61,7 +61,7 @@ function howMuchTimeLeftHandler() {
 	let timeLeftPercent = (timeLeft * 100).toFixed(1)
 	howMuchTimeLeft.style.width = `${100 - timeLeftPercent}%`
 	
-	howMuchTimeLeftDescription.innerHTML = `${100 - timeLeftPercent} percent of today is left.`
+	howMuchTimeLeftDescription.innerHTML = `${timeLeftPercent}% of today has passed. you still got ${100 - timeLeftPercent}% remaining.`
 }
 
 setInterval(howMuchTimeLeftHandler, 86000)
