@@ -1,9 +1,30 @@
 body {
-	background-color: #0d1321;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: #0d1321;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.how-much-time-left{
+	position: absolute;
+	top: 0;
+	background-color: #FFD700;
+	height: 5px;
+}
+
+.how-much-time-left-description{
+	margin: 0 auto;
+	color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 25px;
+}
+
+/*
+==========
+  clock 
+==========
+*/
 
 .clock {
   position: relative;
@@ -17,7 +38,11 @@ body {
   margin-top: 3rem;
 }
 
-
+/*
+================
+  clock hands
+================
+*/
 
 .hour-hand {
   position: absolute;
@@ -70,101 +95,142 @@ body {
   border-radius: 50%;
 }
 
+/*
+========================
+  clock number holder
+========================
+*/
+
 .clock__number-holder {
-	position: absolute;
-	height: 100%;
+  position: absolute;
+  height: 100%;
 }
 
 *>.clock__number-holder {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 19px;
 }
 
+/*
+==================
+  clock numbers
+==================
+*/
+
 .clock__number-holder-one {
-	transform: rotate(30deg);
-	position: relative;
+  transform: rotate(30deg);
+  position: relative;
 }
 
 .clock__number-one {
-	transform: rotate(-30deg);
+  transform: rotate(-30deg);
 }
 
 .clock__number-holder-two {
-	transform: rotate(60deg);
+  transform: rotate(60deg);
 }
 
 .clock__number-two {
-	transform: rotate(-60deg);
+  transform: rotate(-60deg);
 }
 
 .clock__number-holder-three {
-	transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .clock__number-three {
-	transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .clock__number-holder-four {
-	transform: rotate(120deg);
+  transform: rotate(120deg);
 }
 
 .clock__number-four {
-	transform: rotate(-120deg);
+  transform: rotate(-120deg);
 }
 
 .clock__number-holder-five {
-	transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
 .clock__number-five {
-	transform: rotate(-150deg);
+  transform: rotate(-150deg);
 }
 
 .clock__number-holder-six {
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .clock__number-six {
-	transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 .clock__number-holder-seven {
-	transform: rotate(210deg);
+  transform: rotate(210deg);
 }
 
 .clock__number-seven {
-	transform: rotate(-210deg);
+  transform: rotate(-210deg);
 }
 
 .clock__number-holder-eight {
-	transform: rotate(240deg);
+  transform: rotate(240deg);
 }
 
 .clock__number-eight {
-	transform: rotate(-240deg);
+  transform: rotate(-240deg);
 }
 
 .clock__number-holder-nine {
-	transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 .clock__number-nine {
-	transform: rotate(-270deg);
+  transform: rotate(-270deg);
 }
 
 .clock__number-holder-ten {
-	transform: rotate(300deg);
+  transform: rotate(300deg);
 }
 
 .clock__number-ten {
-	transform: rotate(-300deg);
+  transform: rotate(-300deg);
 }
 
 .clock__number-holder-eleven {
-	transform: rotate(330deg);
+  transform: rotate(330deg);
 }
 
 .clock__number-eleven {
-	transform: rotate(-330deg);
+  transform: rotate(-330deg);
 }
+
+/*
+=========
+  date 
+=========
+*/
+
+.date {
+  margin: 3rem auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
