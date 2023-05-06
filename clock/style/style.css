@@ -17,11 +17,7 @@ body {
 	margin: 0 auto;
 	color: #fff;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-<<<<<<< HEAD
 	font-size: 23px;
-=======
-	font-size: 25px;
->>>>>>> 27e74e97b387b0bbd8e0977ffd390e97f508a6fc
 	text-align: center;
 }
 
@@ -218,7 +214,6 @@ body {
 */
 
 .date {
-<<<<<<< HEAD
   margin: 3rem auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
@@ -231,12 +226,6 @@ body {
 	.how-much-time-left-description {
 		font-size: 19px;
 	}
-=======
-	margin: 3rem auto;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: #fff;
-	text-align: center;
->>>>>>> 27e74e97b387b0bbd8e0977ffd390e97f508a6fc
 }
 
 
