@@ -8,7 +8,7 @@ i have to mention that the idea of "the passed time and the remaining time of th
 ![App Screenshot](https://github.com/Dreamer474747/Dreamer474747.github.io/blob/main/clock/clock.PNG?raw=true)
 
 # Demo
-https://dreamer474747.github.io/clock/
+[Click here to see the project demo](https://dreamer474747.github.io/clock/)
 
 # Contact me at:
 
