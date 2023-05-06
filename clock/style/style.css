@@ -18,6 +18,7 @@ body {
 	color: #fff;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 25px;
+	text-align: center;
 }
 
 /*
@@ -213,9 +214,10 @@ body {
 */
 
 .date {
-  margin: 3rem auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #fff;
+	margin: 3rem auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #fff;
+	text-align: center;
 }
 
 
