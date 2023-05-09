@@ -1,3 +1,7 @@
+:root{
+  --font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
   background-color: #0d1321;
   display: flex;
@@ -16,7 +20,7 @@ body {
 .how-much-time-left-description{
 	margin: 0 auto;
 	color: #fff;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: var(--font);
 	font-size: 23px;
 	text-align: center;
 }
@@ -108,7 +112,7 @@ body {
 }
 
 *>.clock__number-holder {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font);
   font-size: 19px;
 }
 
@@ -208,14 +212,20 @@ body {
 }
 
 /*
-=========
-  date 
-=========
+=======================
+  date and show time
+=======================
 */
+
+.show-time{
+  color: #fff;
+  margin: 2rem auto 0;
+  font-family: var(--font);
+}
 
 .date {
   margin: 3rem auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font);
   color: #fff;
   text-align: center;
 }
