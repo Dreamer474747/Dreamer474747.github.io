@@ -32,7 +32,11 @@ function clickHandler(e) {
 
 
 keypadC.addEventListener('click', () => {
-    outputQuestion.value = outputQuestion.value.slice(0, -1)
+    if (outputQuestion.value.match(/^(\d+)?\.\d+(\+|×|∧|÷|-)(\d+)?\.(\d)?$/g)) {
+        outputQuestion.value = outputQuestion.value.slice(0, -2)
+    } else {
+        outputQuestion.value = outputQuestion.value.slice(0, -1)
+    }
 })
 
 
@@ -43,10 +47,16 @@ keypadAc.addEventListener('click', () => {
 
 
 KeypadDot.addEventListener('click', () => {
-    if (outputQuestion.value.match(/^-(\d+)?\.\d+(\+|×|∧|÷|-)(\d+)$/g)) {
+    if (outputQuestion.value.match(/^-(\d+)?\.\d+(\+|×|∧|÷|-)(\d+)$/g) ||
+        outputQuestion.value.match(/^-(\d+)\.\d+-$/g)) {
         outputQuestion.value += '.'
         return
-    } else if (outputQuestion.value === '.' || (outputQuestion.value).match(dotRegex) || (outputQuestion.value).match(/^\d+\.$/g) || (outputQuestion.value).match(/(\+|×|∧|÷|-)(\d+)?\.\d+/g) || (outputQuestion.value).match(/^(\d+)?\.\d+$/g) || (outputQuestion.value).match(/(\+|×|∧|÷|-)(\d+)\./g)) {
+    } else if (outputQuestion.value === '.' ||
+        (outputQuestion.value).match(dotRegex) ||
+        (outputQuestion.value).match(/^\d+\.$/g) ||
+        (outputQuestion.value).match(/(\+|×|∧|÷|-)(\d+)?\.\d+/g) ||
+        (outputQuestion.value).match(/^(\d+)?\.\d+$/g) ||
+        (outputQuestion.value).match(/(\+|×|∧|÷|-)(\d+)\./g)) {
         return
     }
     outputQuestion.value += '.'
@@ -58,7 +68,10 @@ operations.forEach(operation => {
     operation.addEventListener('click', e => {
         if (outputQuestion.value.match(completeOperationRegex)) {
             calculator();
-        } else if (outputQuestion.value === '' || outputQuestion.value.match(halfOperationRegex) || outputQuestion.value.match(/(\d+)?\.\d+(\+|×|∧|÷|-)\./g) || outputQuestion.value === '.') {
+        } else if (outputQuestion.value === '' ||
+            outputQuestion.value.match(halfOperationRegex) ||
+            outputQuestion.value.match(/(\d+)?\.\d+(\+|×|∧|÷|-)\./g) ||
+            outputQuestion.value === '.') {
             return;
         }
 
@@ -71,7 +84,9 @@ operations.forEach(operation => {
 
 
 function calculator() {
-    if (outputQuestion.value.match(/^(\d+)?\.\d+(\+|×|∧|÷|-)\.$/g) || outputQuestion.value === '.' || outputQuestion.value.match(/^(\d+)$|^(\+|×|∧|÷|-)?(\d+)?\.\d+$/g)) {
+    if (outputQuestion.value.match(/^(\d+)?\.\d+(\+|×|∧|÷|-)\.$/g) ||
+        outputQuestion.value === '.' ||
+        outputQuestion.value.match(/^(\d+)$|^(\+|×|∧|÷|-)?(\d+)?\.\d+$/g)) {
         outputAnswer.value = outputQuestion.value;
         return;
     }
@@ -113,8 +128,8 @@ function calculator() {
             outputAnswer.value = outputQuestion.value;
         }
     }
-	
-	
+
+
 }
 
 
