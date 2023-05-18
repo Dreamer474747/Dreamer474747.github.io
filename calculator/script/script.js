@@ -47,8 +47,7 @@ keypadAc.addEventListener('click', () => {
 
 
 KeypadDot.addEventListener('click', () => {
-    if (outputQuestion.value.match(/^-(\d+)?\.\d+(\+|×|∧|÷|-)(\d+)$/g) ||
-        outputQuestion.value.match(/^-(\d+)\.\d+-$/g)) {
+    if (outputQuestion.value.match(/^-(\d+).\d+(-|(+|×|∧|÷)(\d+)?)?$/g) ) {
         outputQuestion.value += '.'
         return
     } else if (outputQuestion.value === '.' ||
