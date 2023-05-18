@@ -47,7 +47,9 @@ keypadAc.addEventListener('click', () => {
 
 
 KeypadDot.addEventListener('click', () => {
-    if (outputQuestion.value.match(/^-(\d+).\d+(-|(+|×|∧|÷)(\d+)?)?$/g) ) {
+    if (outputQuestion.value.match(/^-(\d+)\.\d+-$/g) ||
+	outputQuestion.value.match(/^-(\d+)?\.\d+(\+|×|∧|÷|-)$/g) ||
+	outputQuestion.value.match(/^-(\d+)?\.\d+(\+|×|∧|÷|-)(\d+)$/g)) {
         outputQuestion.value += '.'
         return
     } else if (outputQuestion.value === '.' ||
@@ -83,8 +85,9 @@ operations.forEach(operation => {
 
 
 function calculator() {
-    if (outputQuestion.value.match(/^(\d+)?\.\d+(\+|×|∧|÷|-)\.$/g) ||
-        outputQuestion.value === '.' ||
+	if (outputQuestion.value.match(/^-?(\d+)?\.\d+(\+|×|∧|÷|-)\.$/g)) {
+		return
+	} else if (outputQuestion.value === '.' ||
         outputQuestion.value.match(/^(\d+)$|^(\+|×|∧|÷|-)?(\d+)?\.\d+$/g)) {
         outputAnswer.value = outputQuestion.value;
         return;
