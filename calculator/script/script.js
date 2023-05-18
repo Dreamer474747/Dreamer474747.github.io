@@ -74,7 +74,7 @@ operations.forEach(operation => {
         } else if (outputQuestion.value === '' ||
             outputQuestion.value.match(/(\d|\.)+(\+|×|∧|÷|-){1}/g) ||
             outputQuestion.value.match(/(\d+)?\.\d+(\+|×|∧|÷|-)\./g) ||
-			outputQuestion.value.match(/^(\d+)?\.?(\d+)?(\+|×|∧|÷|-)\.$/g) ||
+            outputQuestion.value.match(/^(\d+)?\.?(\d+)?(\+|×|∧|÷|-)\.$/g) ||
             outputQuestion.value === '.') {
             return;
         } else if (outputQuestion.value.match(/^(\d+)?\.$/g)) {
