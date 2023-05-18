@@ -48,15 +48,17 @@ keypadAc.addEventListener('click', () => {
 
 KeypadDot.addEventListener('click', () => {
     if (outputQuestion.value.match(/^-(\d+)\.\d+-$/g) ||
-	outputQuestion.value.match(/^-(\d+)?\.\d+(\+|×|∧|÷|-)$/g) ||
-	outputQuestion.value.match(/^-(\d+)?\.\d+(\+|×|∧|÷|-)(\d+)$/g)) {
+        outputQuestion.value.match(/^-(\d+)?\.\d+(\+|×|∧|÷|-)$/g) ||
+        outputQuestion.value.match(/^-(\d+)?\.\d+(\+|×|∧|÷|-)(\d+)$/g)) {
         outputQuestion.value += '.'
         return
     } else if (outputQuestion.value === '.' ||
         (outputQuestion.value).match(dotRegex) ||
         (outputQuestion.value).match(/^\d+\.$/g) ||
         (outputQuestion.value).match(/(\+|×|∧|÷|-)(\d+)?\.\d+/g) ||
+        (outputQuestion.value).match(/(\+|×|∧|÷|-)(\d+)?\./g) ||
         (outputQuestion.value).match(/^(\d+)?\.\d+$/g) ||
+        (outputQuestion.value).match(/^(\d+)\.(\+|×|∧|÷|-)\.$/g) ||
         (outputQuestion.value).match(/(\+|×|∧|÷|-)(\d+)\./g)) {
         return
     }
@@ -67,13 +69,16 @@ KeypadDot.addEventListener('click', () => {
 
 operations.forEach(operation => {
     operation.addEventListener('click', e => {
-        if (outputQuestion.value.match(completeOperationRegex)) {
+        if (outputQuestion.value.match(/((\d|\.)+(\+|×|∧|÷|-){1}(\d|\.)+)/g) && (/^(\d+)?\.?(\d+)?(\+|×|∧|÷|-)\.$/g).test(outputQuestion.value) === false) {
             calculator();
         } else if (outputQuestion.value === '' ||
-            outputQuestion.value.match(halfOperationRegex) ||
+            outputQuestion.value.match(/(\d|\.)+(\+|×|∧|÷|-){1}/g) ||
             outputQuestion.value.match(/(\d+)?\.\d+(\+|×|∧|÷|-)\./g) ||
+			outputQuestion.value.match(/^(\d+)?\.?(\d+)?(\+|×|∧|÷|-)\.$/g) ||
             outputQuestion.value === '.') {
             return;
+        } else if (outputQuestion.value.match(/^(\d+)?\.$/g)) {
+            outputQuestion.value = outputQuestion.value.slice(0, -1)
         }
 
         firstNumber = outputQuestion.value;
@@ -85,9 +90,10 @@ operations.forEach(operation => {
 
 
 function calculator() {
-	if (outputQuestion.value.match(/^-?(\d+)?\.\d+(\+|×|∧|÷|-)\.$/g)) {
-		return
-	} else if (outputQuestion.value === '.' ||
+    if (outputQuestion.value.match(/^-?(\d+)?\.\d+(\+|×|∧|÷|-)\.$/g) ||
+        outputQuestion.value.match(/^\d+(\.\d+)?(\+|×|∧|÷|-)\.$/g)) {
+        return
+    } else if (outputQuestion.value === '.' ||
         outputQuestion.value.match(/^(\d+)$|^(\+|×|∧|÷|-)?(\d+)?\.\d+$/g)) {
         outputAnswer.value = outputQuestion.value;
         return;
