@@ -118,6 +118,7 @@ body {
 	line-height: 42px;
 	border-radius: 10px;
 	cursor: pointer;
+	user-select: none;
 }
 
 .input__keypad--zero {

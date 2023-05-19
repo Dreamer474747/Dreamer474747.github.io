@@ -126,16 +126,18 @@ function calculator() {
         } else {
             outputAnswer.value = outputQuestion.value = firstNumber = result.toFixed(3);
         }
+    } else if (outputQuestion.value.match(/^\d+\.$/g)) {
+        outputAnswer.value = outputQuestion.value.slice(0, -1);
+        outputQuestion.value = outputAnswer.value;
+    } else if (outputQuestion.value.match(/(\d+)?\.\d+/g)) {
+        outputAnswer.value = firstNumber;
+    } else if (outputQuestion.value.match(/^\d+(\+|×|∧|÷|-)$/g)) {
+        outputAnswer.value = outputQuestion.value.slice(0, -1);
+        outputQuestion.value = outputAnswer.value;
     } else {
-        if (outputQuestion.value.match(/^\d+\.$/g)) {
-            outputAnswer.value = outputQuestion.value.slice(0, -1);
-            outputQuestion.value = outputAnswer.value;
-        } else if (outputQuestion.value.match(/(\d+)?\.\d+/g)) {
-            outputAnswer.value = firstNumber;
-        } else {
-            outputAnswer.value = outputQuestion.value;
-        }
+        outputAnswer.value = outputQuestion.value;
     }
+
 
 
 }
