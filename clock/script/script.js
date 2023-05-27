@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
 	showTimeHandler()
 	
     setInterval(myTime, 10);
-    setInterval(howMuchTimeLeftHandler, 86000);
+    setInterval(howMuchTimeLeftHandler, 1000);
     setInterval(showTimeHandler, 1000);
 	
     myTime();
