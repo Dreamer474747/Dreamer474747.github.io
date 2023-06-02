@@ -3,6 +3,10 @@
 
 a beautiful and responsive site based from a free template.
 
+# Credit
+
+[link to the creators dribble shot](https://dribbble.com/shots/13451758-Freebie-Time-Survival-FREE-XD-Template)
+
 # Introduction
 
 this site is made with html, css and js.
