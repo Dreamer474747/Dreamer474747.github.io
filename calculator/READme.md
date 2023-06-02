@@ -2,6 +2,11 @@
 
 This is a simple calculator web application developed using HTML, CSS, and JavaScript. It allows users to perform basic mathematical operations such as addition, subtraction, multiplication, and division. The calculator provides a user-friendly interface and delivers accurate results instantaneously.
 
+# Credit
+[link to the figma file](https://www.figma.com/file/0Rp5xCvv850Cw6YOHNG504/Calculator-(Community)?type=design&t=x2L1tWbwhMTxGpm2-6)
+
+[link to the creator of the figma file](https://www.figma.com/@julihabif)
+
 ## Features
 
 1.**Responsive Design**: The calculator is designed to be responsive, ensuring that it adapts well to various screen sizes and devices. Whether you're using it on a desktop computer, laptop, tablet, or smartphone, the calculator will provide a seamless experience.
