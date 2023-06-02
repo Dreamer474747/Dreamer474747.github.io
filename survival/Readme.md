@@ -4,6 +4,9 @@
 a beautiful and responsive site based from a free template.
 
 # Credit
+the xd file of this project is Crafted by EA93.
+
+[link to the creators dribble account](https://dribbble.com/euroart93)
 
 [link to the creators dribble shot](https://dribbble.com/shots/13451758-Freebie-Time-Survival-FREE-XD-Template)
 
