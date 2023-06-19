@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "poppins Regular";
+        src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "poppins Semibold";
+        src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "poppins Bold";
+        src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Poppins Medium";
+        src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+    }
+}
+
+@layer components {
+    .btn {
+        @apply flex justify-center items-center py-2 px-6 rounded-3xl;
+    }
+
+    .justify-items {
+        @apply justify-center items-center;
+    }
+
+    .input::placeholder {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .underline-primary {
+        text-decoration-color: #ff902a;
+        text-decoration: underline;
+    }
+
+    .title {
+        @apply font-poppinsSemiBold text-[2rem] leading-[3rem] pt-40 lg:pt-12 pb-60;
+    }
+
+    .title-underline::after {
+        /* @apply border border-b-4 border-primary border-x-0 border-t-0; */
+        content: '';
+        background-color: #ff902a;
+        position: absolute;
+        width: 2.6rem;
+        height: 0.23rem;
+        border-radius: 5rem;
+        bottom: 0.1rem;
+        left: 0;
+    }
+
+    .cart {
+        @apply w-[21.5rem] h-[23.4rem] bg-white custom-shadow-two z-10 -mt-48 rounded-xl;
+    }
+
+    .cart-rating {
+        @apply absolute top-9 left-8 bg-white custom-shadow flex justify-evenly items-center font-poppinsBold w-16 h-7 px-1 rounded-full;
+    }
+
+    .cart-info {
+        @apply flex justify-between px-8 -mt-[0.1rem] text-secondary text-2xl leading-9;
+    }
+
+    .header-cart-trait {
+        @apply leading-6 font-poppinsSemiBold border-2 border-extraTwo text-extraTwo hover:text-primary hover:border-primary cursor-pointer transition-all rounded-lg py-1 px-[0.63rem];
+    }
+
+    .header-cart-trait-responsive {
+        @apply --sm:text-[0.9rem] --sm:pt-[0.15rem] --sm:pb-[0.1rem] --sm:pl-[0.5rem] --sm:pr-[0.5rem];
+    }
+
+    .main-cart-trait {
+        @apply font-poppinsSemiBold text-sm text-description-color;
+    }
+
+
+    /* 
+    ====================
+       custom shadows
+    ====================
+    */
+
+
+    .custom-shadow {
+        box-shadow: 0 0 0 5px rgba(250, 250, 250, 0.6);
+    }
+
+    .custom-shadow-two {
+        box-shadow: 0 0 0 8px rgba(250, 250, 250, 0.8);
+    }
+
+
+    .custom-shadow-three {
+        box-shadow: 0 20px 50px -5px rgb(0 0 0 / 10%), 0 -7px 10px -6px rgb(0 0 0 / 10%);
+    }
+
+
+    /* 
+    ====================
+       custom shadows
+    ====================
+    */
+
+    /* 
+    ================
+    =============
+    ==========
+    */
+
+    .hamburger-menu--close::after {
+        content: '';
+        width: 1.5rem;
+        height: 0.2rem;
+        border-radius: 5rem;
+        background-color: red;
+        position: absolute;
+        top: -0.3rem;
+        transition: 0.2s;
+    }
+
+    .hamburger-menu--close::before {
+        content: '';
+        width: 1.5rem;
+        height: 0.2rem;
+        border-radius: 5rem;
+        background-color: red;
+        position: absolute;
+        top: 0.3rem;
+        transition: 0.2s;
+    }
+
+    .hamburger-menu--open::after {
+        content: '';
+        width: 1.5rem;
+        height: 0.2rem;
+        border-radius: 5rem;
+        background-color: red;
+        position: absolute;
+        top: -0.3rem;
+        transform: rotate(45deg)translateX(0.43rem);
+        transition: 0.2s;
+    }
+
+    .hamburger-menu--open::before {
+        content: '';
+        width: 1.5rem;
+        height: 0.2rem;
+        border-radius: 5rem;
+        background-color: red;
+        position: absolute;
+        top: 0.3rem;
+        transform: rotate(-45deg)translateX(0.45rem);
+        transition: 0.2s;
+    }
+
+
+    /* 
+    ================
+    =============
+    ==========
+    */
+
+
+    .linear-gradient {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    }
+
+    /* 
+    ===========================
+       delivery-section-item
+    ===========================
+    */
+    .delivery-section-item {
+        @apply flex flex-col justify-between items-center my-4;
+    }
+
+    .delivery-section-item h4 {
+        @apply font-poppinsSemiBold text-2xl leading-9 text-secondary --sm:text-[1.4rem];
+    }
+
+    .delivery-section-item h5 {
+        @apply text-lg text-secondary --sm:text-base;
+    }
+
+
+    /* 
+    ===========================
+    
+    ===========================
+    */
+
+}
