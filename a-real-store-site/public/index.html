@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script defer src="./scripts/app.js"></script>
     <title>disalonzo</title>
 </head>
 <!-- #f8d8a9 -->
 <body class="font-poppins">
-    <div class="sidebar-overlay hidden absolute top-0 left-0 bottom-0 right-0 linear-gradient z-20"></div>
+    <div class="sidebar-overlay hidden absolute top-0 left-0 -bottom-20 right-0 linear-gradient z-20"></div>
     <div class="sidebar fixed z-30 -left-48 top-0 bottom-0 w-48 bg-red-950 duration-200 cursor-default">
         <ul class="hidden lg:flex justify-items flex-col space-y-1 text-lg py-6">
             <li class="text-primary">
@@ -39,10 +41,14 @@
         <img class="hidden lg:block mx-4 cursor-pointer" src="./images/icons_cart.png" alt="icons-cart">
     </div>
     
-    <header class="bg-[#f5ead9] h-[55rem] lg:h-[64rem] --sm:h-fit relative">
-        
+    
+
+    <header class="bg-[#f5ead9] h-[55rem] lg:h-[64rem] --sm:h-fit relative ">
         <div class="container px-8 max-w-7xl lg:max-w-5xl md:max-w-3xl sm:max-w-2xl relative">
-            <nav class="flex justify-between items-center py-4">
+            <div class="flex w-[45.47%] absolute bottom-48 -left-[5.7rem] xl:hidden overflow-hidden">
+                <img class="min-w-[612px] shrink-0" src="./images/coffe.png" alt="coffee beans">
+            </div>
+            <nav class="flex justify-between items-center py-8">
                 <div> <!-- logo container -->
                     <svg width="150" height="30" viewBox="0 0 150 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -130,10 +136,19 @@
                     <img class="absolute top-16" src="./images/header coffee background.png" alt="background-coffee">
                     <img class="w-[78%] mb-10 sm:mb-4 --sm:mb-1 --sm:w-3/4" src="./svgs/header img.svg" alt="coffee">
                     <div class="absolute top-[1.3rem] sm:top-6 -left-14 sm:-left-12 --sm:-left-2 bg-white text-secondary w-44 --sm:w-36 p-[0.625rem] pb-1 text-center rounded-[3.125rem] font-poppinsSemiBold custom-shadow ">Cappuccino</div>
+                    <div class="absolute top-14 -right-4 --sm:-right-2 flex justify-center text-xl --sm:text-base items-center bg-white text-secondary w-28 --sm:w-[5.5rem] h-12 p-[0.625rem] pb-1 text-center rounded-[3.125rem] font-poppinsBold custom-shadow ">
+                        4.8
+                        <div class="ml-1">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-[2.6rem] --sm:bottom-6 left-4 bg-white text-secondary w-28 --sm:w-[5.5rem] p-[0.625rem] pb-1 text-center rounded-[3.125rem] font-poppinsBold custom-shadow ">18K</div>
                 </div>
             </div>
-            <div class="py-8 lg:pt-0">
-                <h3 class="title">Popular <span class="">Now</span></h3>
+            <div class="pb-8 lg:pt-0">
+                <h3 class="title xl:pt-12 ml-8">Popular <span class="custom-underline underline-offset-[6px]">Now</span></h3>
                 <div class="relative flex justify-items flex-wrap lg:justify-evenly">
                     <div class="absolute md:-top-16 sm:-top-12 --sm:hidden">
                         <svg class="w-full" width="1268" height="364" viewBox="0 0 1268 364" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -256,7 +271,7 @@
     <main class="mt-80 sm:mt-48 --sm:mt-16">
         <div class="container px-8 max-w-7xl lg:max-w-5xl md:max-w-3xl sm:max-w-2xl">
             <section class="flex flex-col items-start">
-                <h3 class="font-poppinsSemiBold text-[2rem] leading-[3rem] mb-8 sm:text-[1.8rem] ">How to use delivery service</h3>
+                <h3 class="font-poppinsSemiBold text-[2rem] leading-[3rem] mb-8 sm:text-[1.8rem] ">How to use <span class="custom-underline underline-offset-8">delivery service</span></h3>
                 <div class="w-full flex justify-around items-center flex-wrap">
                     <div class="delivery-section-item">
                         <img src="./svgs/coffee-cup.svg" alt="coffee cup">
@@ -282,7 +297,7 @@
                         <img class="w-full rounded-md h-[31.8rem]" src="./images/main coffe.jpg" alt="coffee cup">
                     </div>
                     <div class="flex flex-col space-y-4">
-                        <h3 class="title py-0 sm:text-2xl">About <span class="relative title-underline">us</span></h3>
+                        <h3 class="title py-0 sm:text-2xl">About <span class="relative custom-underline underline-offset-4">us</span></h3>
                         <h4 class="font-poppinsSemiBold text-2xl leading-9 max-w-[23rem] sm:text-lg">We provide quality coffee, and ready to deliver.</h4>
                         <h5 class="text-lg text-description-color max-w-md sm:text-sm">We are a company that makes and distributes delicious drinks. our main product is made with a secret recipe and available in stores worldwide.</h5>
                         <a class="btn w-36 h-10 rounded-full font-poppinsBold bg-secondary text-btn-color text-xs left-[1.1rem]" href="#">Get your coffee</a>
@@ -290,10 +305,10 @@
                 </div>
             </section>
             <section>
-                <h3 class="title">Special menu <span class="">for you</span></h3>
+                <h3 class="title pb-0">Special menu <span class="custom-underline underline-offset-8 --sm:underline-offset-[8.5px]">for you</span></h3>
                 <!-- main carts -->
-                <div class="main-carts-container flex justify-between items-center flex-wrap">
-                    <div class="cart mt-0 m-4 max-w-[22.25rem] h-[24.0625rem] custom-shadow-three --sm:h-fit">
+                <div class="main-carts-container flex justify-center items-center flex-wrap">
+                    <div class="main-cart">
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Sandwich.jpg" alt="Sandwich">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
@@ -306,8 +321,8 @@
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1.2rem]">Sandwich</h3>
-                            <h3 class="font-poppinsBold --sm:text-[1.2rem]">12 K</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Sandwich</h3>
+                            <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
                             <div class="flex justify-start items-center w-[55%]">
@@ -327,7 +342,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cart mt-0 m-4 max-w-[22.25rem] h-[24.0625rem] custom-shadow-three --sm:h-fit">
+                    <div class="main-cart">
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Hot Milk.jpg" alt="Hot Milk">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
@@ -340,8 +355,8 @@
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1.2rem]">Hot Milk</h3>
-                            <h3 class="font-poppinsBold --sm:text-[1.2rem]">12 K</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Hot Milk</h3>
+                            <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
                             <div class="flex justify-start items-center w-[55%]">
@@ -361,7 +376,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cart mt-0 m-4 max-w-[22.25rem] h-[24.0625rem] custom-shadow-three --sm:h-fit">
+                    <div class="main-cart">
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Coffe Ice Cream.jpg" alt="Coffe Ice Cream">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
@@ -374,8 +389,8 @@
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1.2rem]">Coffe Ice Cream</h3>
-                            <h3 class="font-poppinsBold --sm:text-[1.2rem]">12 K</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Coffe Ice Cream</h3>
+                            <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
                             <div class="flex justify-start items-center w-[55%]">
@@ -395,7 +410,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cart mt-0 m-4 max-w-[22.25rem] h-[24.0625rem] custom-shadow-three --sm:h-fit">
+                    <div class="main-cart">
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Cappucino.jpg" alt="Cappucino">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
@@ -408,8 +423,8 @@
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1.2rem]">Cappucino</h3>
-                            <h3 class="font-poppinsBold --sm:text-[1.2rem]">12 K</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Cappucino</h3>
+                            <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
                             <div class="flex justify-start items-center w-[55%]">
@@ -429,7 +444,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cart mt-0 m-4 max-w-[22.25rem] h-[24.0625rem] custom-shadow-three --sm:h-fit">
+                    <div class="main-cart">
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Moccacinno.jpg" alt="Moccacinno">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
@@ -442,8 +457,8 @@
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1.2rem]">Moccacinno</h3>
-                            <h3 class="font-poppinsBold --sm:text-[1.2rem]">12 K</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Moccacinno</h3>
+                            <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
                             <div class="flex justify-start items-center w-[55%]">
@@ -463,7 +478,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cart mt-0 m-4 max-w-[22.25rem] h-[24.0625rem] custom-shadow-three --sm:h-fit">
+                    <div class="main-cart">
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Waffle Ice Cream.jpg" alt="Waffle Ice Cream">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
@@ -476,8 +491,8 @@
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1.2rem]">Waffle Ice Cream</h3>
-                            <h3 class="font-poppinsBold --sm:text-[1.2rem]">12 K</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Waffle Ice Cream</h3>
+                            <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
                             <div class="flex justify-start items-center w-[55%]">
@@ -500,8 +515,70 @@
                 </div>
             </section>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section class="mt-16 container 2xl:px-8 max-w-[90rem]">
+            <div class="flex justify-items 2xl:block">
+                <div class="w-full 2xl:max-w-[76rem] relative ml-20 -mr-80 2xl:mx-auto 2xl:-mb-48">
+                    <img class="h-96 2xl:w-full rounded-3xl 2xl:mx-auto" src="./images/bg-image.jpg" alt="background image">
+                    <div class="absolute md:text-center top-1/2 left-1/2 -translate-x-[90%] 2xl:-translate-x-1/2 -translate-y-1/2 2xl:-translate-y-[110%]">
+                        <h4 class="title py-0 lg--md:text-2xl md:text-lg">What they say about us</h4>
+                        <h5 class="text-lg lg--md:text-sm md:text-xs text-description-color max-w-xs 2xl:max-w-sm">We always provide the best service and always maintain the quality of coffee</h5>
+                    </div>
+                </div>
+                <div class="swiper mySwiper 2xl:max-w-5xl xl:max-w-6xl lg:max-w-2xl md:max-w-sm --sm:max-w-[13.45rem] container">
+                    <div class="swiper-wrapper select-none mt-8 mb-8 2xl:pl-8 lg:pl-8 md:pl-[5.2rem] --sm:pl-0">
+                      <div class="swiper-slide relative">
+                        <img class="swiper-img " src="./images/Naura.jpg" alt="customer">
+                        <div class="swiper-div">
+                            <h4>Naura</h4>
+                            <h5>I really love the cappucino, the coffee was very smooth</h5>
+                        </div>
+                      </div>
+                      <div class="swiper-slide relative">
+                        <img class="swiper-img" src="./images/John.jpg" alt="customer">
+                        <div class="swiper-div">
+                            <h4>John</h4>
+                            <h5>this coffee shop is very convenient</h5>
+                        </div>
+                      </div>
+                      <div class="swiper-slide relative">
+                        <img class="swiper-img" src="./images/Azura.jpg" alt="customer">
+                        <div class="swiper-div">
+                            <h4>Azura</h4>
+                            <h5>the coffee menu here is very much diverse</h5>
+                        </div>
+                      </div>
+                      <div class="swiper-slide relative">
+                        <img class="swiper-img" src="./images/Naura.jpg" alt="customer">
+                        <div class="swiper-div">
+                            <h4>Naura</h4>
+                            <h5>I really love the cappucino, the coffee was very smooth</h5>
+                        </div>
+                      </div>
+                      <div class="swiper-slide relative">
+                        <img class="swiper-img" src="./images/John.jpg" alt="customer">
+                        <div class="swiper-div">
+                            <h4>John</h4>
+                            <h5>this coffee shop is very convenient</h5>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    <footer class="px-8 mt-8 container max-w-7xl lg:max-w-5xl md:max-w-3xl sm:max-w-2xl">
+        <div class="footer-container h-[24.5rem] flex flex-col justify-items px-4">
+            <h2 class="font-poppinsSemiBold text-white text-[32px] leading-[3rem] mb-8 lg--md:mb-6 md:mb-4 lg--md:text-[28px] md:text-2xl sm:text-xl --sm:text-lg text-center">Subscribe to get 50% discount price</h2>
+            <form class="relative w-[30.375rem] md:w-fit h-14">
+                <input class="min-w-0 w-full h-full rounded-[42px] font-poppinsSemiBold pl-6 --sm:pl-3 pr-40 --sm:pr-24 md:pr-36 outline-none border-none" type="email" placeholder="Email address">
+                <button class="btn p-0 w-[8.625rem] md:w-28 --sm:w-20 h-11 md:h-10 rounded-[33px] bg-secondary text-white text-xs --sm:text-[0.65rem] leading-[2.75rem] absolute top-[0.375rem] md:top-2 right-[0.375rem] md:right-2">Order now</button>
+            </form>
+        </div>
+    </footer>
+    
 </body>
 
 </html>

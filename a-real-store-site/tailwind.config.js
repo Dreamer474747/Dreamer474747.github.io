@@ -6,6 +6,8 @@ module.exports = {
       center: true
     },
     screens: {
+      '2xl': {'max': '1500px'},
+
       'xl': {'max': '1280px'},
 
       'lg': {'max': '992px'},
@@ -33,6 +35,7 @@ module.exports = {
         "btn-color": "#f4ae26",
         "description-color": "#7e7d7a"
       },
+      
     },
   },
   plugins: [],

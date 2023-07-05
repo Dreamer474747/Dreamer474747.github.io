@@ -2,119 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    @font-face {
-        font-family: "poppins Regular";
-        src: url("../fonts/Poppins-Regular.ttf") format("truetype");
-    }
 
-    @font-face {
-        font-family: "poppins Semibold";
-        src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
-    }
 
-    @font-face {
-        font-family: "poppins Bold";
-        src: url("../fonts/Poppins-Bold.ttf") format("truetype");
-    }
+/* .swiper-pagination-bullet {
+    background-color: #f8e9d2 !important;
+} */
 
-    @font-face {
-        font-family: "Poppins Medium";
-        src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+.swiper-pagination-bullet-active {
+    background-color: #ff902a !important;
+}
+
+.swiper-pagination{
+    bottom: 0;
+}
+
+.footer-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/footer image.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+}
+
+@media  (max-width: 470px) {
+    form input::placeholder {
+        font-size: 13.5px;
     }
 }
 
-@layer components {
-    .btn {
-        @apply flex justify-center items-center py-2 px-6 rounded-3xl;
-    }
 
-    .justify-items {
-        @apply justify-center items-center;
-    }
-
-    .input::placeholder {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .underline-primary {
-        text-decoration-color: #ff902a;
-        text-decoration: underline;
-    }
-
-    .title {
-        @apply font-poppinsSemiBold text-[2rem] leading-[3rem] pt-40 lg:pt-12 pb-60;
-    }
-
-    .title-underline::after {
-        /* @apply border border-b-4 border-primary border-x-0 border-t-0; */
-        content: '';
-        background-color: #ff902a;
-        position: absolute;
-        width: 2.6rem;
-        height: 0.23rem;
-        border-radius: 5rem;
-        bottom: 0.1rem;
-        left: 0;
-    }
-
-    .cart {
-        @apply w-[21.5rem] h-[23.4rem] bg-white custom-shadow-two z-10 -mt-48 rounded-xl;
-    }
-
-    .cart-rating {
-        @apply absolute top-9 left-8 bg-white custom-shadow flex justify-evenly items-center font-poppinsBold w-16 h-7 px-1 rounded-full;
-    }
-
-    .cart-info {
-        @apply flex justify-between px-8 -mt-[0.1rem] text-secondary text-2xl leading-9;
-    }
-
-    .header-cart-trait {
-        @apply leading-6 font-poppinsSemiBold border-2 border-extraTwo text-extraTwo hover:text-primary hover:border-primary cursor-pointer transition-all rounded-lg py-1 px-[0.63rem];
-    }
-
-    .header-cart-trait-responsive {
-        @apply --sm:text-[0.9rem] --sm:pt-[0.15rem] --sm:pb-[0.1rem] --sm:pl-[0.5rem] --sm:pr-[0.5rem];
-    }
-
-    .main-cart-trait {
-        @apply font-poppinsSemiBold text-sm text-description-color;
-    }
-
-
-    /* 
+/* 
     ====================
-       custom shadows
+       hamburger menu
     ====================
-    */
-
-
-    .custom-shadow {
-        box-shadow: 0 0 0 5px rgba(250, 250, 250, 0.6);
-    }
-
-    .custom-shadow-two {
-        box-shadow: 0 0 0 8px rgba(250, 250, 250, 0.8);
-    }
-
-
-    .custom-shadow-three {
-        box-shadow: 0 20px 50px -5px rgb(0 0 0 / 10%), 0 -7px 10px -6px rgb(0 0 0 / 10%);
-    }
-
-
-    /* 
-    ====================
-       custom shadows
-    ====================
-    */
-
-    /* 
-    ================
-    =============
-    ==========
     */
 
     .hamburger-menu--close::after {
@@ -163,17 +82,158 @@
         transition: 0.2s;
     }
 
+    /* 
+    ====================
+       hamburger menu
+    ====================
+    */
+
+
+
+
+
+
+@layer base {
+    @font-face {
+        font-family: "poppins Regular";
+        src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "poppins Semibold";
+        src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "poppins Bold";
+        src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Poppins Medium";
+        src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+    }
+
+    
+
+}
+
+@layer components {
+    .btn {
+        @apply flex justify-center items-center py-2 px-6 rounded-3xl;
+    }
+
+    .justify-items {
+        @apply justify-center items-center;
+    }
+
+    .input::placeholder {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .custom-underline {
+        @apply underline decoration-primary decoration-4;
+    }
+
+    .title {
+        @apply font-poppinsSemiBold text-[2rem] leading-[3rem] pt-40 lg:pt-12 pb-60;
+    }
 
     /* 
-    ================
     =============
-    ==========
+       cart
+    =============
+    */
+
+    .cart {
+        @apply w-[21.5rem] h-[23.4rem] bg-white custom-shadow-two z-10 -mt-48 rounded-xl;
+    }
+
+    .cart div img {
+        width: 19.2rem;
+        height: 14.125rem;
+        object-fit: cover;
+        object-position: 50% 86%;
+    }
+
+    .cart-rating {
+        @apply absolute top-9 left-8 bg-white custom-shadow flex justify-evenly items-center font-poppinsBold w-16 h-7 px-1 rounded-full;
+    }
+
+    .cart-info {
+        @apply flex justify-between px-8 -mt-[0.1rem] text-secondary text-2xl leading-9;
+    }
+
+    .header-cart-trait {
+        @apply leading-6 font-poppinsSemiBold border-2 border-extraTwo text-extraTwo hover:text-primary hover:border-primary cursor-pointer transition-all rounded-lg py-1 px-[0.63rem] --sm:text-[0.9rem] --sm:pt-[0.15rem] --sm:pb-[0.1rem] --sm:pl-[0.5rem] --sm:pr-[0.5rem];
+    }
+
+    .main-cart-trait {
+        @apply font-poppinsSemiBold text-sm text-description-color --sm:text-[0.73rem];
+    }
+
+    .main-cart {
+        @apply cart mt-6 md:mt-8 mx-3 md:mx-0 max-w-[22.25rem] h-[24.0625rem] custom-shadow-three --sm:h-fit;
+    }
+
+    
+    /* 
+    =============
+       cart
+    =============
+    */
+
+
+
+    /* 
+    ====================
+       custom shadows
+    ====================
+    */
+
+
+    .custom-shadow {
+        box-shadow: 0 0 0 5px rgba(250, 250, 250, 0.6);
+    }
+
+    .custom-shadow-two {
+        box-shadow: 0 0 0 8px rgba(250, 250, 250, 0.8);
+    }
+
+
+    .custom-shadow-three {
+        box-shadow: 0 20px 50px -5px rgb(0 0 0 / 10%), 0 -7px 10px -6px rgb(0 0 0 / 10%);
+    }
+
+    .custom-shadow-four {
+        box-shadow: 0 0 0 5px rgba(255, 211, 144, 0.62);
+    }
+
+    /* 
+    ====================
+       custom shadows
+    ====================
+    */
+
+
+    /* 
+    ====================
+       linear-gradient
+    ====================
     */
 
 
     .linear-gradient {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     }
+
+    
+    /* 
+    ====================
+       linear-gradient
+    ====================
+    */
 
     /* 
     ===========================
@@ -195,8 +255,38 @@
 
     /* 
     ===========================
-    
+       delivery-section-item
     ===========================
     */
 
+
+
+    /* 
+    ===========================
+       swiper slide
+    ===========================
+    */
+    
+    .swiper-img {
+        @apply w-[13.4rem] h-72 border-4 border-[#ffd390] object-cover ;
+    }
+
+    .swiper-div {
+        @apply absolute inset-x-9 --sm:inset-x-[0.70rem] inset-y-44 --sm:inset-y-48 text-secondary w-56 --sm:w-48 h-[5.4rem] bg-[#ffcb7c] py-2 px-3 rounded-xl custom-shadow-four;
+    }
+
+    .swiper-div h4 {
+        @apply font-PoppinsMedium text-lg --sm:text-base;
+    }
+
+    .swiper-div h5 {
+        @apply text-sm --sm:text-xs;
+    }
+
+    /* 
+    ===========================
+       swiper slide
+    ===========================
+    */
+    
 }
