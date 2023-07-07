@@ -4,11 +4,17 @@ const hamburgerMenu = $.querySelector('#hamburger-menu')
 const sidebar = $.querySelector('.sidebar')
 const sidebarOverlay = $.querySelector('.sidebar-overlay')
 let isSidebarOpen = false
+let sidebarItems = $.querySelectorAll('.sidebar-item')
+
 
 
 sidebarOverlay.addEventListener('click', sidebarClose)
 
 function sidebarClose() {
+    document.querySelectorAll('.container').forEach(function(container) {
+        container.style = `padding-right: auto;`
+    })
+    hamburgerMenuContainer.style.right = `1rem`
     sidebar.style.left = '-12rem'
     hamburgerMenu.classList.toggle('hamburger-menu--open')
     console.log('close');
@@ -18,7 +24,11 @@ function sidebarClose() {
     isSidebarOpen = false
 }
 
-function sidebarOpen() {
+function sidebarOpen(scrollBarWidth) {
+    document.querySelectorAll('.container').forEach(function(container) {
+        container.style = `padding-right: ${2 + (scrollBarWidth / 16)}rem;`
+    })
+    hamburgerMenuContainer.style.right = `${1 + (scrollBarWidth / 16)}rem`
     sidebar.style.left = '0'
     hamburgerMenu.classList.toggle('hamburger-menu--open')
     console.log('open');
@@ -28,16 +38,35 @@ function sidebarOpen() {
     isSidebarOpen = true
 }
 
-hamburgerMenuContainer.addEventListener('click', function () {
+hamburgerMenu.addEventListener('click', function () {
     let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
     if (isSidebarOpen) {
-        document.querySelector('.container').style = `padding-right: auto;`
         sidebarClose()
     } else {
-        document.querySelector('.container').style = `padding-right: ${2 + (scrollBarWidth / 16)}rem;`
-        sidebarOpen()
+        sidebarOpen(scrollBarWidth)
     }
 })
+
+
+
+sidebarItems.forEach(function(item) {
+    item.addEventListener('click', (e) => {
+        sidebarItems.forEach(sidebarItem => {
+            sidebarItem.classList.remove('text-primary')
+            console.log('1');
+        })
+        console.log('2');
+        e.target.classList.add('text-primary')
+
+        sidebarClose()
+    })
+})
+
+
+
+
+
+
 
 
 

@@ -119,6 +119,11 @@
 }
 
 @layer components {
+
+    .container-essentials {
+        @apply max-w-7xl lg:max-w-5xl md:max-w-3xl sm:max-w-2xl;
+    }
+
     .btn {
         @apply flex justify-center items-center py-2 px-6 rounded-3xl;
     }

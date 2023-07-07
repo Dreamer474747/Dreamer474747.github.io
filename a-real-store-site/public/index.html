@@ -6,24 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/output.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script defer src="./scripts/app.js"></script>
-    <title>disalonzo</title>
+    <title>coffee shop</title>
 </head>
 <!-- #f8d8a9 -->
-<body class="font-poppins">
-    <div class="sidebar-overlay hidden absolute top-0 left-0 -bottom-20 right-0 linear-gradient z-20"></div>
-    <div class="sidebar fixed z-30 -left-48 top-0 bottom-0 w-48 bg-red-950 duration-200 cursor-default">
+
+<body class="font-poppins ">
+    <div class="sidebar-overlay hidden fixed top-0 left-0 bottom-0 right-0 linear-gradient z-20"></div>
+    <div class="sidebar fixed z-30 -left-48 top-0 bottom-0 w-48 bg-extra duration-200 cursor-default">
         <ul class="hidden lg:flex justify-items flex-col space-y-1 text-lg py-6">
-            <li class="text-primary">
-                <a href="#">About us</a>
+            <li>
+                <a class="sidebar-item text-primary" href="#about-us">About us</a>
             </li>
             <li>
-                <a href="#">Our Product</a>
+                <a class="sidebar-item" href="#our-product">Our Product</a>
             </li>
             <li>
-                <a href="#">Delivery</a>
+                <a class="sidebar-item" href="#delivery">Delivery</a>
             </li>
         </ul>
         <label class="hidden sm:block relative mb-6 mx-4">
@@ -40,16 +41,15 @@
         </label>
         <img class="hidden lg:block mx-4 cursor-pointer" src="./images/icons_cart.png" alt="icons-cart">
     </div>
-    
-    
 
     <header class="bg-[#f5ead9] h-[55rem] lg:h-[64rem] --sm:h-fit relative ">
-        <div class="container px-8 max-w-7xl lg:max-w-5xl md:max-w-3xl sm:max-w-2xl relative">
+        <div class="container px-8 container-essentials relative">
             <div class="flex w-[45.47%] absolute bottom-48 -left-[5.7rem] xl:hidden overflow-hidden">
                 <img class="min-w-[612px] shrink-0" src="./images/coffe.png" alt="coffee beans">
             </div>
             <nav class="flex justify-between items-center py-8">
-                <div> <!-- logo container -->
+                <div>
+                    <!-- logo container -->
                     <svg width="150" height="30" viewBox="0 0 150 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M46 1.5C46 7.46737 44 13.5 41 17.4099C37 21.5 37 24 25.5222 24C14.0444 24 14 22.1151 9.61232 17.4099C5.22463 12.7047 5 7.96737 5 2H9C9 10.5 12.4388 14.5834 12.4388 14.5834C12.4388 14.5834 15.5222 20.0027 25.5222 20.0027C35.5222 20.0027 38 14.5834 38 14.5834C38 14.5834 41.4321 8.5 41.4321 1.5H46Z"
@@ -70,20 +70,21 @@
                             d="M105.365 21C103.742 21 102.442 20.6973 101.465 20.0919C100.488 19.4745 100 18.5361 100 17.277C100 16.611 100.116 16.1025 100.348 15.7514C100.58 15.4003 100.922 15.2247 101.373 15.2247C101.703 15.2247 101.972 15.3095 102.179 15.479C102.387 15.6485 102.49 15.8664 102.49 16.1328C102.49 16.375 102.472 16.5868 102.436 16.7684C102.436 16.8169 102.423 16.9016 102.399 17.0227C102.387 17.1438 102.381 17.2709 102.381 17.4041C102.381 17.9489 102.655 18.3545 103.205 18.6209C103.766 18.8872 104.548 19.0204 105.549 19.0204C106.586 19.0204 107.398 18.8388 107.984 18.4756C108.57 18.1003 108.863 17.5796 108.863 16.9137C108.863 16.5021 108.729 16.151 108.46 15.8604C108.192 15.5577 107.856 15.3095 107.453 15.1158C107.05 14.91 106.483 14.6617 105.75 14.3712C104.81 14.0079 104.041 13.6629 103.443 13.336C102.857 13.0091 102.35 12.5672 101.923 12.0102C101.508 11.4412 101.3 10.7389 101.3 9.90352C101.3 9.03178 101.532 8.25691 101.996 7.57889C102.472 6.90087 103.15 6.3742 104.029 5.99886C104.92 5.62353 105.964 5.43587 107.16 5.43587C108.051 5.43587 108.869 5.56905 109.614 5.83542C110.359 6.08967 110.951 6.48316 111.39 7.01589C111.842 7.54862 112.068 8.20242 112.068 8.9773C112.068 9.74007 111.952 10.3152 111.72 10.7026C111.488 11.09 111.146 11.2838 110.694 11.2838C110.377 11.2838 110.108 11.1869 109.889 10.9932C109.681 10.7995 109.577 10.5694 109.577 10.3031C109.577 10.073 109.596 9.86115 109.632 9.66743C109.669 9.3042 109.687 9.07416 109.687 8.9773C109.687 8.46879 109.437 8.08135 108.936 7.81498C108.436 7.54862 107.813 7.41544 107.069 7.41544C106.019 7.41544 105.213 7.60916 104.651 7.9966C104.102 8.37193 103.827 8.90466 103.827 9.59478C103.827 10.0549 103.968 10.4484 104.248 10.7753C104.541 11.1022 104.902 11.3746 105.329 11.5925C105.756 11.8104 106.354 12.0708 107.123 12.3734C108.051 12.7488 108.796 13.0878 109.358 13.3905C109.919 13.6932 110.395 14.1048 110.786 14.6254C111.189 15.146 111.39 15.7877 111.39 16.5505C111.39 17.9792 110.841 19.081 109.742 19.8558C108.656 20.6186 107.197 21 105.365 21ZM120.942 16.8048C121.1 16.8048 121.223 16.8774 121.308 17.0227C121.406 17.168 121.455 17.3678 121.455 17.622C121.455 18.1063 121.339 18.4817 121.107 18.748C120.582 19.3897 120.008 19.9164 119.385 20.328C118.763 20.7397 118.048 20.9455 117.243 20.9455C114.752 20.9455 113.507 19.2081 113.507 15.7333C113.507 15.2005 113.525 14.6617 113.562 14.1169H112.848C112.481 14.1169 112.231 14.0503 112.097 13.9171C111.975 13.784 111.914 13.5721 111.914 13.2815C111.914 12.6035 112.188 12.2645 112.738 12.2645H113.782C113.989 10.9327 114.307 9.71585 114.734 8.61407C115.161 7.5123 115.674 6.63451 116.272 5.98071C116.883 5.32691 117.536 5 118.232 5C118.744 5 119.147 5.22399 119.44 5.67196C119.733 6.11994 119.88 6.68294 119.88 7.36095C119.88 9.23761 119.086 10.8721 117.499 12.2645H119.55C119.745 12.2645 119.886 12.3069 119.971 12.3916C120.057 12.4764 120.099 12.6338 120.099 12.8638C120.099 13.6992 119.41 14.1169 118.03 14.1169H115.796C115.772 14.7223 115.759 15.1945 115.759 15.5335C115.759 16.7927 115.906 17.6765 116.199 18.185C116.504 18.6935 116.98 18.9478 117.627 18.9478C118.152 18.9478 118.616 18.7904 119.019 18.4756C119.422 18.1608 119.898 17.6886 120.447 17.059C120.594 16.8895 120.759 16.8048 120.942 16.8048ZM117.737 6.74347C117.554 6.74347 117.346 6.97352 117.115 7.4336C116.895 7.88158 116.681 8.51116 116.474 9.32236C116.278 10.1215 116.113 11.0114 115.979 11.9921C116.699 11.3746 117.237 10.6845 117.591 9.92168C117.957 9.14681 118.14 8.44457 118.14 7.81498C118.14 7.10064 118.006 6.74347 117.737 6.74347ZM121.264 20.9455C120.8 20.9455 120.47 20.7034 120.275 20.2191C120.092 19.7348 120 18.9599 120 17.8944C120 16.3205 120.226 14.8252 120.678 13.4086C120.788 13.0575 120.965 12.8033 121.209 12.6459C121.465 12.4764 121.819 12.3916 122.271 12.3916C122.515 12.3916 122.686 12.4219 122.784 12.4824C122.881 12.5429 122.93 12.658 122.93 12.8275C122.93 13.0212 122.839 13.4571 122.655 14.1351C122.533 14.6194 122.436 15.0431 122.362 15.4064C122.289 15.7696 122.228 16.2176 122.179 16.7503C122.582 15.709 123.034 14.8615 123.534 14.2077C124.035 13.5539 124.523 13.0878 124.999 12.8093C125.488 12.5308 125.933 12.3916 126.336 12.3916C127.13 12.3916 127.527 12.7851 127.527 13.5721C127.527 13.7295 127.472 14.1109 127.362 14.7162C127.264 15.2005 127.215 15.5032 127.215 15.6243C127.215 16.048 127.368 16.2599 127.673 16.2599C128.015 16.2599 128.454 15.9936 128.992 15.4608C129.15 15.3034 129.315 15.2247 129.486 15.2247C129.645 15.2247 129.767 15.2974 129.852 15.4427C129.95 15.5759 129.999 15.7575 129.999 15.9875C129.999 16.4355 129.877 16.7866 129.632 17.0409C129.291 17.392 128.888 17.6947 128.424 17.9489C127.972 18.1911 127.49 18.3121 126.977 18.3121C126.33 18.3121 125.836 18.1487 125.494 17.8218C125.164 17.4949 124.999 17.053 124.999 16.496C124.999 16.3144 125.018 16.1328 125.054 15.9512C125.079 15.709 125.091 15.5456 125.091 15.4608C125.091 15.2671 125.024 15.1703 124.89 15.1703C124.706 15.1703 124.462 15.3761 124.157 15.7877C123.864 16.1873 123.571 16.72 123.278 17.3859C122.985 18.0518 122.747 18.7541 122.564 19.4926C122.43 20.0617 122.271 20.4491 122.088 20.6549C121.917 20.8487 121.642 20.9455 121.264 20.9455ZM136.464 16.8048C136.623 16.8048 136.745 16.8774 136.831 17.0227C136.928 17.168 136.977 17.3678 136.977 17.622C136.977 18.1063 136.861 18.4817 136.629 18.748C136.177 19.2929 135.537 19.7953 134.706 20.2554C133.888 20.7155 133.009 20.9455 132.069 20.9455C130.788 20.9455 129.793 20.6005 129.084 19.9103C128.376 19.2202 128.022 18.2758 128.022 17.0772C128.022 16.2418 128.199 15.4669 128.553 14.7526C128.907 14.0261 129.396 13.451 130.018 13.0272C130.653 12.6035 131.367 12.3916 132.161 12.3916C132.869 12.3916 133.437 12.6035 133.864 13.0272C134.291 13.4389 134.505 14.0019 134.505 14.7162C134.505 15.5516 134.2 16.272 133.589 16.8774C132.991 17.4707 131.972 17.9429 130.531 18.294C130.836 18.8509 131.416 19.1294 132.271 19.1294C132.82 19.1294 133.443 18.9417 134.139 18.5664C134.847 18.179 135.457 17.6765 135.97 17.059C136.116 16.8895 136.281 16.8048 136.464 16.8048ZM131.85 14.1714C131.398 14.1714 131.013 14.4317 130.696 14.9523C130.391 15.4729 130.238 16.1025 130.238 16.8411V16.8774C130.958 16.7079 131.526 16.4537 131.941 16.1146C132.356 15.7756 132.564 15.3821 132.564 14.9342C132.564 14.7041 132.497 14.5225 132.362 14.3893C132.24 14.244 132.069 14.1714 131.85 14.1714ZM143.653 16.8048C143.812 16.8048 143.934 16.8774 144.02 17.0227C144.117 17.168 144.166 17.3678 144.166 17.622C144.166 18.1063 144.05 18.4817 143.818 18.748C143.367 19.2929 142.726 19.7953 141.895 20.2554C141.077 20.7155 140.199 20.9455 139.258 20.9455C137.977 20.9455 136.982 20.6005 136.274 19.9103C135.565 19.2202 135.211 18.2758 135.211 17.0772C135.211 16.2418 135.388 15.4669 135.743 14.7526C136.097 14.0261 136.585 13.451 137.208 13.0272C137.842 12.6035 138.557 12.3916 139.35 12.3916C140.058 12.3916 140.626 12.6035 141.053 13.0272C141.48 13.4389 141.694 14.0019 141.694 14.7162C141.694 15.5516 141.389 16.272 140.778 16.8774C140.18 17.4707 139.161 17.9429 137.72 18.294C138.025 18.8509 138.605 19.1294 139.46 19.1294C140.009 19.1294 140.632 18.9417 141.328 18.5664C142.036 18.179 142.646 17.6765 143.159 17.059C143.305 16.8895 143.47 16.8048 143.653 16.8048ZM139.039 14.1714C138.587 14.1714 138.202 14.4317 137.885 14.9523C137.58 15.4729 137.427 16.1025 137.427 16.8411V16.8774C138.148 16.7079 138.715 16.4537 139.13 16.1146C139.545 15.7756 139.753 15.3821 139.753 14.9342C139.753 14.7041 139.686 14.5225 139.551 14.3893C139.429 14.244 139.258 14.1714 139.039 14.1714ZM145.697 14.1169C145.672 14.7223 145.66 15.1945 145.66 15.5335C145.66 16.4052 145.703 17.0893 145.788 17.5857C145.886 18.07 146.038 18.4211 146.246 18.639C146.466 18.8449 146.765 18.9478 147.143 18.9478C147.339 18.9478 147.571 18.8872 147.839 18.7662C148.108 18.6451 148.352 18.4877 148.572 18.294C148.706 18.1729 148.84 18.1124 148.975 18.1124C149.121 18.1124 149.237 18.1971 149.322 18.3666C149.42 18.524 149.469 18.7177 149.469 18.9478C149.469 19.1778 149.42 19.4018 149.322 19.6197C149.237 19.8377 149.103 20.0193 148.92 20.1646C148.285 20.6852 147.564 20.9455 146.759 20.9455C145.599 20.9455 144.75 20.4673 144.213 19.5108C143.676 18.5422 143.408 17.283 143.408 15.7333C143.408 15.2005 143.426 14.6617 143.463 14.1169H142.748C142.382 14.1169 142.132 14.0503 141.998 13.9171C141.875 13.784 141.814 13.5721 141.814 13.2815C141.814 12.6035 142.089 12.2645 142.638 12.2645H143.682C143.89 10.9327 144.207 9.71585 144.634 8.61407C145.062 7.5123 145.575 6.63451 146.173 5.98071C146.783 5.32691 147.436 5 148.132 5C148.645 5 149.048 5.22399 149.341 5.67196C149.634 6.11994 149.78 6.68294 149.78 7.36095C149.78 9.23761 148.987 10.8721 147.4 12.2645H149.451C149.646 12.2645 149.786 12.3069 149.872 12.3916C149.957 12.4764 150 12.6338 150 12.8638C150 13.6992 149.31 14.1169 147.931 14.1169H145.697ZM147.638 6.74347C147.455 6.74347 147.247 6.97352 147.015 7.4336C146.795 7.88158 146.582 8.51116 146.374 9.32236C146.179 10.1215 146.014 11.0114 145.88 11.9921C146.6 11.3746 147.137 10.6845 147.491 9.92168C147.857 9.14681 148.041 8.44457 148.041 7.81498C148.041 7.10064 147.906 6.74347 147.638 6.74347Z"
                             fill="#2F2105" />
                     </svg>
-                    
+
                 </div>
                 <ul class="flex justify-items space-x-3 text-lg lg:hidden">
-                    <li class="text-primary">
-                        <a href="#">About us</a>
+                    <li class="">
+                        <a class="text-primary sidebar-item" href="#about-us">About us</a>
                     </li>
                     <li>
-                        <a href="#">Our Product</a>
+                        <a class="sidebar-item" href="#our-product">Our Product</a>
                     </li>
                     <li>
-                        <a href="#">Delivery</a>
+                        <a class="sidebar-item" href="#delivery">Delivery</a>
                     </li>
                 </ul>
-                <div class="flex justify-items relative"> <!-- serach box and basket icon container -->
+                <div class="flex justify-items relative">
+                    <!-- serach box and basket icon container -->
                     <label class="relative block mr-5 sm:hidden">
                         <span class="absolute pt-[9px] pl-3">
                             <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -96,96 +97,130 @@
                         <input class="input rounded-full pl-[50px] py-1 focus:outline-none w-56 h-10 pr-4" type="text"
                             placeholder="Cappuccino">
                     </label>
-                    <div class="cursor-pointer py-[0.3rem] hamburger-menu-container z-30">
+                    <div class="fixed right-[0.7rem] top-[1.95rem] lg:top-[2.85rem] lg:right-4 cursor-pointer py-[0.3rem] hamburger-menu-container z-30">
                         <img class="lg:hidden" src="./images/icons_cart.png" alt="icons-cart">
-                        <div id="hamburger-menu" class="hidden w-6 h-1 bg-transparent lg:block relative duration-200 hamburger-menu--close"></div>
+                        <div id="hamburger-menu"
+                            class="hidden w-6 h-1 bg-transparent lg:block relative duration-200 hamburger-menu--close">
+                        </div>
                     </div>
                 </div>
             </nav>
             <div class="flex justify-between items-center mt-10 lg:flex-col ">
 
-                <div class="lg:-mt-4 lg:mb-12"> <!--header title-->
-                    
-                    <h1 class="text-5xl leading-[72px] font-poppinsBold max-w-lg sm:text-4xl --sm:text-3xl">Enjoy your <span class="text-primary">coffee</span> before your activity</h1>
-                    
-                    <p class="max-w-[24.5rem] my-5 text-lg text-description-color sm:text-base">Boost your productivity and build your mood with a glass of coffee in the morning</p>
+                <div class="lg:-mt-4 lg:mb-12">
+                    <!--header title-->
+
+                    <h1 class="text-5xl leading-[72px] font-poppinsBold max-w-lg sm:text-4xl --sm:text-3xl">Enjoy your
+                        <span class="text-primary">coffee</span> before your activity</h1>
+
+                    <p class="max-w-[24.5rem] my-5 text-lg text-description-color sm:text-base">Boost your productivity
+                        and build your mood with a glass of coffee in the morning</p>
 
                     <div class="flex justify-start">
-                        
+
                         <div class="btn bg-secondary p-0 text-white relative">
-                            <a href="#" class="text-sm leading-[100%] font-poppinsSemiBold py-[14px] pl-8 pr-16 rounded-3xl w-full h-full z-10 --sm:pl-4 --sm:pr-12 --sm:text-[0.67rem]">Order now</a>
+                            <a href="#"
+                                class="text-sm leading-[100%] font-poppinsSemiBold py-[14px] pl-8 pr-16 rounded-3xl w-full h-full z-10 --sm:pl-4 --sm:pr-12 --sm:text-[0.67rem]">Order
+                                now</a>
                             <div class="absolute right-8 --sm:right-4">
-                                <svg width="22" height="22" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <circle cx="11" cy="11" r="11" fill="#FF912B"/>
-                                    <rect x="5" y="5" width="12" height="12" fill="url(#pattern0)"/>
+                                <svg width="22" height="22" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <circle cx="11" cy="11" r="11" fill="#FF912B" />
+                                    <rect x="5" y="5" width="12" height="12" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_2383_87" transform="scale(0.0166667)"/>
-                                    </pattern>
-                                    <image id="image0_2383_87" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_2383_87" transform="scale(0.0166667)" />
+                                        </pattern>
+                                        <image id="image0_2383_87" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
                         </div>
-                        
-                        <a href="#" class="text-xs leading-[18px] font-poppinsBold text-btn-color btn hover:underline bg-transparent ">More menu</a>
+
+                        <a href="#"
+                            class="text-xs leading-[18px] font-poppinsBold text-btn-color btn hover:underline bg-transparent ">More menu</a>
                     </div>
                 </div>
 
-                <div class="bg-secondary relative rounded-full w-80 h-80 flex justify-items mr-4 lg:mr-0 sm:w-[17rem] sm:h-[17rem] --sm:w-64 --sm:h-64">
+                <div
+                    class="bg-secondary relative rounded-full w-80 h-80 flex justify-items mr-4 lg:mr-0 sm:w-[17rem] sm:h-[17rem] --sm:w-64 --sm:h-64">
                     <img class="absolute top-16" src="./images/header coffee background.png" alt="background-coffee">
                     <img class="w-[78%] mb-10 sm:mb-4 --sm:mb-1 --sm:w-3/4" src="./svgs/header img.svg" alt="coffee">
-                    <div class="absolute top-[1.3rem] sm:top-6 -left-14 sm:-left-12 --sm:-left-2 bg-white text-secondary w-44 --sm:w-36 p-[0.625rem] pb-1 text-center rounded-[3.125rem] font-poppinsSemiBold custom-shadow ">Cappuccino</div>
-                    <div class="absolute top-14 -right-4 --sm:-right-2 flex justify-center text-xl --sm:text-base items-center bg-white text-secondary w-28 --sm:w-[5.5rem] h-12 p-[0.625rem] pb-1 text-center rounded-[3.125rem] font-poppinsBold custom-shadow ">
+                    <div
+                        class="absolute top-[1.3rem] sm:top-6 -left-14 sm:-left-12 --sm:-left-2 bg-white text-secondary w-44 --sm:w-36 p-[0.625rem] pb-1 text-center rounded-[3.125rem] font-poppinsSemiBold custom-shadow ">
+                        Cappuccino</div>
+                    <div
+                        class="absolute top-14 -right-4 --sm:-right-2 flex justify-center text-xl --sm:text-base items-center bg-white text-secondary w-28 --sm:w-[5.5rem] h-12 p-[0.625rem] pb-1 text-center rounded-[3.125rem] font-poppinsBold custom-shadow ">
                         4.8
                         <div class="ml-1">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                    fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
                     </div>
-                    <div class="absolute bottom-[2.6rem] --sm:bottom-6 left-4 bg-white text-secondary w-28 --sm:w-[5.5rem] p-[0.625rem] pb-1 text-center rounded-[3.125rem] font-poppinsBold custom-shadow ">18K</div>
+                    <div
+                        class="absolute bottom-[2.6rem] --sm:bottom-6 left-4 bg-white text-secondary w-28 --sm:w-[5.5rem] p-[0.625rem] pb-1 text-center rounded-[3.125rem] font-poppinsBold custom-shadow ">
+                        18K</div>
                 </div>
             </div>
             <div class="pb-8 lg:pt-0">
-                <h3 class="title xl:pt-12 ml-8">Popular <span class="custom-underline underline-offset-[6px]">Now</span></h3>
+                <h3 class="title xl:pt-12 ml-8">Popular <span class="custom-underline underline-offset-[6px]">Now</span>
+                </h3>
                 <div class="relative flex justify-items flex-wrap lg:justify-evenly">
                     <div class="absolute md:-top-16 sm:-top-12 --sm:hidden">
-                        <svg class="w-full" width="1268" height="364" viewBox="0 0 1268 364" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 64.9359C0 28.0895 31.0343 -1.14672 67.8151 1.04973L1207.82 69.1273C1241.62 71.146 1268 99.149 1268 133.014V300C1268 335.346 1239.35 364 1204 364H64C28.6538 364 0 335.346 0 300V64.9359Z" fill="#F9D9AA"/>
-                        </svg>    
+                        <svg class="w-full" width="1268" height="364" viewBox="0 0 1268 364" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 64.9359C0 28.0895 31.0343 -1.14672 67.8151 1.04973L1207.82 69.1273C1241.62 71.146 1268 99.149 1268 133.014V300C1268 335.346 1239.35 364 1204 364H64C28.6538 364 0 335.346 0 300V64.9359Z"
+                                fill="#F9D9AA" />
+                        </svg>
                     </div>
                     <!-- header carts -->
                     <div class="cart lg--md:-mt-[12.3rem] --sm:h-fit">
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Vanilla Latte.jpg" alt="vanilla latte">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
-                                4.8 
+                                4.8
                                 <span>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                            fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </span>
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1.2rem]">Vanilla Latte</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1.2rem]">Vanilla
+                                Latte</h3>
                             <h3 class="font-poppinsBold --sm:text-[1.2rem]">21 K</h3>
                         </div>
                         <div class="flex justify-between px-8 -mt-[0.1rem] py-4">
                             <div class="flex justify-start items-center w-[49%] ">
-                                <p class="header-cart-trait -ml-[0.3rem] mr-4 sm:mr-2 header-cart-trait-responsive ">Hot</p>
+                                <p class="header-cart-trait -ml-[0.3rem] mr-4 sm:mr-2 header-cart-trait-responsive ">Hot
+                                </p>
                                 <p class="header-cart-trait header-cart-trait-responsive">Cold</p>
                             </div>
                             <div>
-                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B"/>
-                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)"/>
+                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B" />
+                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_21_94" transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)"/>
-                                    </pattern>
-                                    <image id="image0_21_94" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_21_94"
+                                                transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_21_94" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
@@ -195,10 +230,14 @@
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/espresso.jpg" alt="espresso">
                             <div class="cart-rating">
-                                4.8 
+                                4.8
                                 <span>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                            fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </span>
                             </div>
@@ -213,14 +252,18 @@
                                 <p class="header-cart-trait">Cold</p>
                             </div>
                             <div>
-                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B"/>
-                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)"/>
+                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B" />
+                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_21_94" transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)"/>
-                                    </pattern>
-                                    <image id="image0_21_94" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_21_94"
+                                                transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_21_94" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
@@ -230,10 +273,14 @@
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Hazelnut Latte.jpg" alt="hazelnut latte">
                             <div class="cart-rating">
-                                4.8 
+                                4.8
                                 <span>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                            fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </span>
                             </div>
@@ -248,30 +295,35 @@
                                 <p class="header-cart-trait">Cold</p>
                             </div>
                             <div>
-                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B"/>
-                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)"/>
+                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B" />
+                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_21_94" transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)"/>
-                                    </pattern>
-                                    <image id="image0_21_94" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_21_94"
+                                                transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_21_94" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
 
     </header>
 
-    <main class="mt-80 sm:mt-48 --sm:mt-16">
-        <div class="container px-8 max-w-7xl lg:max-w-5xl md:max-w-3xl sm:max-w-2xl">
-            <section class="flex flex-col items-start">
-                <h3 class="font-poppinsSemiBold text-[2rem] leading-[3rem] mb-8 sm:text-[1.8rem] ">How to use <span class="custom-underline underline-offset-8">delivery service</span></h3>
+    <main class="mt-60 lg:mt-[22rem] sm:mt-48 --sm:mt-16">
+        <div class="container px-8 container-essentials">
+            <section id="delivery" class="pt-8 flex flex-col items-start">
+                <h3 class="font-poppinsSemiBold text-[2rem] leading-[3rem] mb-8 sm:text-[1.8rem] ">How to use <span
+                        class="custom-underline underline-offset-8">delivery service</span></h3>
                 <div class="w-full flex justify-around items-center flex-wrap">
                     <div class="delivery-section-item">
                         <img src="./svgs/coffee-cup.svg" alt="coffee cup">
@@ -287,10 +339,10 @@
                         <img src="./svgs/coffee-cup 2.svg" alt="coffee cup">
                         <h4>Enjoy your coffee</h4>
                         <h5>Choose delivery service</h5>
-                    </div>    
+                    </div>
                 </div>
             </section>
-            <section class="relative flex justify-items mt-20 lg:mt-12">
+            <section id="about-us" class="pt-12 relative flex justify-items mt-20 lg:mt-12">
                 <img class="absolute w-full lg:h-full" src="./images/big-bg-image.jpg" alt="coffee background image">
                 <div class="w-full flex justify-around items-center z-10 lg:p-8">
                     <div class="w-[23rem] custom-shadow mb-40 lg:hidden">
@@ -298,30 +350,40 @@
                     </div>
                     <div class="flex flex-col space-y-4">
                         <h3 class="title py-0 sm:text-2xl">About <span class="relative custom-underline underline-offset-4">us</span></h3>
-                        <h4 class="font-poppinsSemiBold text-2xl leading-9 max-w-[23rem] sm:text-lg">We provide quality coffee, and ready to deliver.</h4>
-                        <h5 class="text-lg text-description-color max-w-md sm:text-sm">We are a company that makes and distributes delicious drinks. our main product is made with a secret recipe and available in stores worldwide.</h5>
-                        <a class="btn w-36 h-10 rounded-full font-poppinsBold bg-secondary text-btn-color text-xs left-[1.1rem]" href="#">Get your coffee</a>
+                        <h4 class="font-poppinsSemiBold text-2xl leading-9 max-w-[23rem] sm:text-lg">We provide quality
+                            coffee, and ready to deliver.</h4>
+                        <h5 class="text-lg text-description-color max-w-md sm:text-sm">We are a company that makes and
+                            distributes delicious drinks. our main product is made with a secret recipe and available in
+                            stores worldwide.</h5>
+                        <a class="btn w-36 h-10 rounded-full font-poppinsBold bg-secondary text-btn-color text-xs left-[1.1rem]"
+                            href="#">Get your coffee</a>
                     </div>
                 </div>
             </section>
-            <section>
-                <h3 class="title pb-0">Special menu <span class="custom-underline underline-offset-8 --sm:underline-offset-[8.5px]">for you</span></h3>
+            <section id="our-product" class="lg:mt-12">
+                <h3 class="title pt-8 pb-0">Special menu <span
+                        class="custom-underline underline-offset-8 --sm:underline-offset-[8.5px]">for you</span></h3>
                 <!-- main carts -->
                 <div class="main-carts-container flex justify-center items-center flex-wrap">
                     <div class="main-cart">
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Sandwich.jpg" alt="Sandwich">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
-                                4.8 
+                                4.8
                                 <span>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                            fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </span>
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Sandwich</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Sandwich
+                            </h3>
                             <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
@@ -329,14 +391,18 @@
                                 <p class="main-cart-trait ">bread with meat and vegetables</p>
                             </div>
                             <div>
-                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B"/>
-                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)"/>
+                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B" />
+                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_21_94" transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)"/>
-                                    </pattern>
-                                    <image id="image0_21_94" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_21_94"
+                                                transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_21_94" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
@@ -346,16 +412,21 @@
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Hot Milk.jpg" alt="Hot Milk">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
-                                4.8 
+                                4.8
                                 <span>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                            fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </span>
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Hot Milk</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Hot Milk
+                            </h3>
                             <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
@@ -363,14 +434,18 @@
                                 <p class="main-cart-trait ">Hot Milk with less sugar</p>
                             </div>
                             <div>
-                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B"/>
-                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)"/>
+                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B" />
+                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_21_94" transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)"/>
-                                    </pattern>
-                                    <image id="image0_21_94" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_21_94"
+                                                transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_21_94" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
@@ -380,16 +455,21 @@
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Coffe Ice Cream.jpg" alt="Coffe Ice Cream">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
-                                4.8 
+                                4.8
                                 <span>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                            fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </span>
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Coffe Ice Cream</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Coffe Ice
+                                Cream</h3>
                             <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
@@ -397,14 +477,18 @@
                                 <p class="main-cart-trait ">Coffe with ice cream vanilla</p>
                             </div>
                             <div>
-                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B"/>
-                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)"/>
+                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B" />
+                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_21_94" transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)"/>
-                                    </pattern>
-                                    <image id="image0_21_94" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_21_94"
+                                                transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_21_94" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
@@ -414,16 +498,21 @@
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Cappucino.jpg" alt="Cappucino">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
-                                4.8 
+                                4.8
                                 <span>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                            fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </span>
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Cappucino</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Cappucino
+                            </h3>
                             <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
@@ -431,14 +520,18 @@
                                 <p class="main-cart-trait ">Hot Cappucino</p>
                             </div>
                             <div>
-                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B"/>
-                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)"/>
+                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B" />
+                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_21_94" transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)"/>
-                                    </pattern>
-                                    <image id="image0_21_94" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_21_94"
+                                                transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_21_94" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
@@ -448,16 +541,21 @@
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Moccacinno.jpg" alt="Moccacinno">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
-                                4.8 
+                                4.8
                                 <span>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                            fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </span>
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Moccacinno</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Moccacinno
+                            </h3>
                             <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
@@ -465,14 +563,18 @@
                                 <p class="main-cart-trait ">Hot Moccacinno</p>
                             </div>
                             <div>
-                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B"/>
-                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)"/>
+                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B" />
+                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_21_94" transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)"/>
-                                    </pattern>
-                                    <image id="image0_21_94" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_21_94"
+                                                transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_21_94" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
@@ -482,16 +584,21 @@
                         <div class="relative px-4 py-6">
                             <img class="w-full rounded-xl" src="./images/Waffle Ice Cream.jpg" alt="Waffle Ice Cream">
                             <div class="cart-rating --sm:h-6 --sm:w-12 --sm:text-[0.8rem]">
-                                4.8 
+                                4.8
                                 <span>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45988 1.53591C6.64654 1.04357 7.35296 1.04357 7.54021 1.53591L8.74771 4.88074C8.78984 4.9897 8.86402 5.08332 8.96045 5.14925C9.05689 5.21517 9.17106 5.2503 9.28788 5.24999H12.2553C12.8036 5.24999 13.0428 5.93249 12.6117 6.26674L10.5 8.16666C10.4055 8.23937 10.3363 8.34018 10.3026 8.45462C10.2688 8.56906 10.2722 8.69125 10.3122 8.80366L11.0834 12.0721C11.2712 12.5971 10.6634 13.048 10.2037 12.7248L7.33546 10.9048C7.23724 10.8358 7.1201 10.7987 7.00004 10.7987C6.87999 10.7987 6.76285 10.8358 6.66463 10.9048L3.79638 12.7248C3.33729 13.048 2.72888 12.5965 2.91671 12.0721L3.68788 8.80366C3.72788 8.69125 3.73125 8.56906 3.69751 8.45462C3.66376 8.34018 3.59464 8.23937 3.50004 8.16666L1.38838 6.26674C0.956711 5.93249 1.19704 5.24999 1.74421 5.24999H4.71163C4.82846 5.25038 4.94267 5.21528 5.03912 5.14935C5.13558 5.08341 5.20974 4.98975 5.25179 4.88074L6.45929 1.53591H6.45988Z"
+                                            fill="#FFD057" stroke="#FFD057" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </span>
                             </div>
                         </div>
                         <div class="cart-info">
-                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Waffle Ice Cream</h3>
+                            <h3 class="font-poppinsSemiBold -ml-[0.3rem] --sm:-ml-[0.6rem] --sm:text-[1rem]">Waffle Ice
+                                Cream</h3>
                             <h3 class="font-poppinsBold --sm:text-[1rem]">12 K</h3>
                         </div>
                         <div class="flex justify-between pr-8 pl-[1.71rem] -mt-[0.1rem] py-4">
@@ -499,14 +606,18 @@
                                 <p class="main-cart-trait ">Waffle with Ice cream</p>
                             </div>
                             <div>
-                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B"/>
-                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)"/>
+                                <svg class="cursor-pointer" width="44" height="43" viewBox="0 0 44 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="0.760559" width="43.1211" height="43" rx="21.5" fill="#FF912B" />
+                                    <rect x="13.3211" y="13" width="18" height="17" fill="url(#pattern0)" />
                                     <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_21_94" transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)"/>
-                                    </pattern>
-                                    <image id="image0_21_94" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_21_94"
+                                                transform="matrix(0.0166667 0 0 0.0176471 0 -0.0294118)" />
+                                        </pattern>
+                                        <image id="image0_21_94" width="60" height="60"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII=" />
                                     </defs>
                                 </svg>
                             </div>
@@ -518,67 +629,76 @@
         <section class="mt-16 container 2xl:px-8 max-w-[90rem]">
             <div class="flex justify-items 2xl:block">
                 <div class="w-full 2xl:max-w-[76rem] relative ml-20 -mr-80 2xl:mx-auto 2xl:-mb-48">
-                    <img class="h-96 2xl:w-full rounded-3xl 2xl:mx-auto" src="./images/bg-image.jpg" alt="background image">
-                    <div class="absolute md:text-center top-1/2 left-1/2 -translate-x-[90%] 2xl:-translate-x-1/2 -translate-y-1/2 2xl:-translate-y-[110%]">
+                    <img class="h-96 2xl:w-full rounded-3xl 2xl:mx-auto" src="./images/bg-image.jpg"
+                        alt="background image">
+                    <div
+                        class="absolute md:text-center top-1/2 left-1/2 -translate-x-[90%] 2xl:-translate-x-1/2 -translate-y-1/2 2xl:-translate-y-[110%]">
                         <h4 class="title py-0 lg--md:text-2xl md:text-lg">What they say about us</h4>
-                        <h5 class="text-lg lg--md:text-sm md:text-xs text-description-color max-w-xs 2xl:max-w-sm">We always provide the best service and always maintain the quality of coffee</h5>
+                        <h5 class="text-lg lg--md:text-sm md:text-xs text-description-color max-w-xs 2xl:max-w-sm">We
+                            always provide the best service and always maintain the quality of coffee</h5>
                     </div>
                 </div>
-                <div class="swiper mySwiper 2xl:max-w-5xl xl:max-w-6xl lg:max-w-2xl md:max-w-sm --sm:max-w-[13.45rem] container">
+                <div
+                    class="swiper mySwiper 2xl:max-w-5xl xl:max-w-6xl lg:max-w-2xl md:max-w-sm --sm:max-w-[13.45rem] container">
                     <div class="swiper-wrapper select-none mt-8 mb-8 2xl:pl-8 lg:pl-8 md:pl-[5.2rem] --sm:pl-0">
-                      <div class="swiper-slide relative">
-                        <img class="swiper-img " src="./images/Naura.jpg" alt="customer">
-                        <div class="swiper-div">
-                            <h4>Naura</h4>
-                            <h5>I really love the cappucino, the coffee was very smooth</h5>
+                        <div class="swiper-slide relative">
+                            <img class="swiper-img " src="./images/Naura.jpg" alt="customer">
+                            <div class="swiper-div">
+                                <h4>Naura</h4>
+                                <h5>I really love the cappucino, the coffee was very smooth</h5>
+                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide relative">
-                        <img class="swiper-img" src="./images/John.jpg" alt="customer">
-                        <div class="swiper-div">
-                            <h4>John</h4>
-                            <h5>this coffee shop is very convenient</h5>
+                        <div class="swiper-slide relative">
+                            <img class="swiper-img" src="./images/John.jpg" alt="customer">
+                            <div class="swiper-div">
+                                <h4>John</h4>
+                                <h5>this coffee shop is very convenient</h5>
+                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide relative">
-                        <img class="swiper-img" src="./images/Azura.jpg" alt="customer">
-                        <div class="swiper-div">
-                            <h4>Azura</h4>
-                            <h5>the coffee menu here is very much diverse</h5>
+                        <div class="swiper-slide relative">
+                            <img class="swiper-img" src="./images/Azura.jpg" alt="customer">
+                            <div class="swiper-div">
+                                <h4>Azura</h4>
+                                <h5>the coffee menu here is very much diverse</h5>
+                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide relative">
-                        <img class="swiper-img" src="./images/Naura.jpg" alt="customer">
-                        <div class="swiper-div">
-                            <h4>Naura</h4>
-                            <h5>I really love the cappucino, the coffee was very smooth</h5>
+                        <div class="swiper-slide relative">
+                            <img class="swiper-img" src="./images/Naura.jpg" alt="customer">
+                            <div class="swiper-div">
+                                <h4>Naura</h4>
+                                <h5>I really love the cappucino, the coffee was very smooth</h5>
+                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide relative">
-                        <img class="swiper-img" src="./images/John.jpg" alt="customer">
-                        <div class="swiper-div">
-                            <h4>John</h4>
-                            <h5>this coffee shop is very convenient</h5>
+                        <div class="swiper-slide relative">
+                            <img class="swiper-img" src="./images/John.jpg" alt="customer">
+                            <div class="swiper-div">
+                                <h4>John</h4>
+                                <h5>this coffee shop is very convenient</h5>
+                            </div>
                         </div>
-                      </div>
-                      
+
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
     </main>
-    
-    <footer class="px-8 mt-8 container max-w-7xl lg:max-w-5xl md:max-w-3xl sm:max-w-2xl">
+
+    <footer class="mb-8 px-8 mt-8 container container-essentials">
         <div class="footer-container h-[24.5rem] flex flex-col justify-items px-4">
-            <h2 class="font-poppinsSemiBold text-white text-[32px] leading-[3rem] mb-8 lg--md:mb-6 md:mb-4 lg--md:text-[28px] md:text-2xl sm:text-xl --sm:text-lg text-center">Subscribe to get 50% discount price</h2>
+            <h2
+                class="font-poppinsSemiBold text-white text-[32px] leading-[3rem] mb-8 lg--md:mb-6 md:mb-4 lg--md:text-[28px] md:text-2xl sm:text-xl --sm:text-lg text-center">
+                Subscribe to get 50% discount price</h2>
             <form class="relative w-[30.375rem] md:w-fit h-14">
-                <input class="min-w-0 w-full h-full rounded-[42px] font-poppinsSemiBold pl-6 --sm:pl-3 pr-40 --sm:pr-24 md:pr-36 outline-none border-none" type="email" placeholder="Email address">
-                <button class="btn p-0 w-[8.625rem] md:w-28 --sm:w-20 h-11 md:h-10 rounded-[33px] bg-secondary text-white text-xs --sm:text-[0.65rem] leading-[2.75rem] absolute top-[0.375rem] md:top-2 right-[0.375rem] md:right-2">Order now</button>
+                <input
+                    class="min-w-0 w-full h-full rounded-[42px] font-poppinsSemiBold pl-6 --sm:pl-3 pr-40 --sm:pr-24 md:pr-36 outline-none border-none"
+                    type="email" placeholder="Email address">
+                <button
+                    class="btn p-0 w-[8.625rem] md:w-28 --sm:w-20 h-11 md:h-10 rounded-[33px] bg-secondary text-white text-xs --sm:text-[0.65rem] leading-[2.75rem] absolute top-[0.375rem] md:top-2 right-[0.375rem] md:right-2">Order
+                    now</button>
             </form>
         </div>
     </footer>
-    
 </body>
 
 </html>
