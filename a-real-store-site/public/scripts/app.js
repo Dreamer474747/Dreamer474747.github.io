@@ -15,7 +15,7 @@ function sidebarClose() {
         container.style = `padding-right: auto;`
     })
     hamburgerMenuContainer.style.right = `1rem`
-    sidebar.style.left = '-14.5rem'
+    sidebar.style.left = '-16rem'
     hamburgerMenu.classList.toggle('hamburger-menu--open')
     sidebarOverlay.style.display = 'none'
     $.body.style.maxHeight = 'auto'
@@ -67,22 +67,9 @@ sidebarItems.forEach(function (item) {
 
 
 
-
-
-
-
-
-
-
-
-
-// swiper shit
-
-
-
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 40,
     breakpoints: {
         // when window width is >= 768px
         768: {
@@ -109,24 +96,6 @@ const swiper = new Swiper('.swiper', {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// basket shit
-
 let basket = []
 const basketIcon = $.querySelector('.basket-icon')
 const products = $.querySelectorAll('.product')
@@ -151,7 +120,7 @@ products.forEach(item => {
         let matchedProduct = basket.find(prod => prod.name === name)
 
         if (matchedProduct) {
-            addProductNumber(matchedProduct)
+            increaseProductNumber(matchedProduct)
         } else {
             addProduct(name, price)
         }
@@ -160,7 +129,7 @@ products.forEach(item => {
     })
 })
 
-function addProductNumber(product) {
+function increaseProductNumber(product) {
     if (product.number < 5) {
         product.number++;
         basketHandler()
@@ -169,39 +138,6 @@ function addProductNumber(product) {
         productIsAddedDiv(`you cant buy more ${product.name}!`)
     }
 }
-
-
-
-
-
-
-function addProductHandler(event) {
-    let productName = event.target.parentNode.parentNode.firstElementChild.innerHTML
-    let productIndex = basket.findIndex(prod => {
-        return prod.name === productName
-    })
-    addProductNumber(basket[productIndex])
-}
-
-
-
-function subtractProductNumber(event) {
-    let productName = event.target.parentNode.parentNode.firstElementChild.innerHTML
-    let productIndex = basket.findIndex(prod => {
-        return prod.name === productName
-    })
-    if (basket[productIndex].number === 1) {
-        basket.splice(productIndex, 1)
-    } else {
-        basket[productIndex].number--;
-    }
-    basketHandler()
-}
-
-
-
-
-
 
 
 function addProduct(name, price) {
@@ -215,6 +151,7 @@ function addProduct(name, price) {
     basketHandler()
     productIsAddedDiv(`${name} added to the basket!`)
 }
+
 
 
 function productIsAddedDiv(sentence) {
@@ -237,8 +174,6 @@ function productIsAddedDiv(sentence) {
         }, 2000);
     }
 }
-
-
 
 
 
@@ -278,6 +213,7 @@ function basketHandler() {
 }
 
 
+
 function sumOfAllPrices() {
     let sum = 0
 
@@ -289,18 +225,58 @@ function sumOfAllPrices() {
 }
 
 
+
+function addProductHandler(event) {
+    let productName = event.target.parentNode.parentNode.firstElementChild.innerHTML
+    let productIndex = basket.findIndex(prod => {
+        return prod.name === productName
+    })
+    increaseProductNumber(basket[productIndex])
+}
+
+
+
+function subtractProductNumber(event) {
+    let productName = event.target.parentNode.parentNode.firstElementChild.innerHTML
+    let productIndex = basket.findIndex(prod => {
+        return prod.name === productName
+    })
+    if (basket[productIndex].number === 1) {
+        basket.splice(productIndex, 1)
+    } else {
+        basket[productIndex].number--;
+    }
+    basketHandler()
+}
+
+
+
+function productRemover(event) {
+    let productName = event.target.parentNode.firstElementChild.innerHTML
+    let productIndex = basket.findIndex(prod => {
+        return prod.name === productName
+    })
+    basket.splice(productIndex, 1)
+    basketHandler()
+}
+
+
+
 purchaseBtn.forEach(elem => {
     elem.addEventListener('click', () => {
         if (basket.length !== 0) {
             elem.classList.remove('bg-secondary', 'text-white', 'cursor-pointer')
             elem.innerHTML = 'Please Wait...'
+            $.querySelectorAll('.purchased-product').forEach(product => {
+                product.style.pointerEvents = 'none'
+            })
             elem.style.cssText = `
             background-color: #aaa;
             color: #ddd;
             user-select: none;
             cursor: default;
             `
-    
+            
             setTimeout(() => {
                 basket = []
                 basketHandler()
@@ -316,6 +292,9 @@ purchaseBtn.forEach(elem => {
                 elem.classList.add('bg-secondary', 'cursor-pointer')
                 elem.classList.remove('bg-green-800', 'cursor-default', 'select-none')
                 elem.innerHTML = 'Purchase All Products'
+                $.querySelectorAll('.purchased-product').forEach(product => {
+                    product.style.pointerEvents = 'auto'
+                })
                 elem.style.cssText = `
                 background-color: #2f2105;
                 color: white;
@@ -324,18 +303,7 @@ purchaseBtn.forEach(elem => {
             }, 3000)
         }
     })
-}) 
-
-
-
-function productRemover(event) {
-    let productName = event.target.parentNode.firstElementChild.innerHTML
-    let productIndex = basket.findIndex(prod => {
-        return prod.name === productName
-    })
-    basket.splice(productIndex, 1)
-    basketHandler()
-}
+})
 
 
 
@@ -358,28 +326,6 @@ basketIcon.addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// search shit
-
 let productNames = [
     "Hazelnut Latte",
     "Espresso",
@@ -392,12 +338,9 @@ let productNames = [
     "Waffle Ice Cream"
 ]
 
-
 let searchInput = $.querySelector('input')
 let searchResults = $.querySelector('.search-result')
 let searchOverlay = $.querySelector('.search-overlay')
-
-
 
 
 searchInput.addEventListener('input', () => {
@@ -448,57 +391,5 @@ function searchHandler(j) {
         `
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

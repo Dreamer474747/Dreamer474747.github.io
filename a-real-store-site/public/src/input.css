@@ -199,21 +199,6 @@
         @apply fixed top-0 left-0 bottom-0 right-0 z-20;
     }
 
-
-    /* <li class="flex items-center pl-1 mt-1 border-t border-black">
-            <p class="w-[47%] text-sm">${product.name}</p>
-            <p class="mr-[0.6rem] w-[16%] flex justify-items">${product.price}$</p>
-            <div class="flex justify-items w-[20%]">
-                <img onclick="addProductHandler(event)" src="./svg-icons/add.svg">
-                <input class="w-4 pl-[0.2rem] select-none bg-transparent" value="${product.number}" disabled type="text">
-                <img onclick="subtractProductNumber(event)" src="./svg-icons/remove.svg">
-            </div>
-            <img onclick="productRemover(event)" class="w-[1.2rem] h-8 ml-4" src="./svg-icons/close.svg">
-       </li> */
-
-
-
-
     /* 
     =============
        cart
