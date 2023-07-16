@@ -4,9 +4,7 @@
 
 
 
-/* .swiper-pagination-bullet {
-    background-color: #f8e9d2 !important;
-} */
+
 
 .swiper-pagination-bullet-active {
     background-color: #ff902a !important;
@@ -77,7 +75,7 @@
         border-radius: 5rem;
         background-color: red;
         position: absolute;
-        top: 0.3rem;
+        top: 0.32rem;
         transform: rotate(-45deg)translateX(0.45rem);
         transition: 0.2s;
     }
@@ -87,8 +85,61 @@
        hamburger menu
     ====================
     */
+    
+    /* 
+    ====================
+       purchased product
+    ====================
+    */
 
 
+    .purchased-product {
+        display: flex;
+        align-items: center;
+        padding-left: 0.25rem;
+        border-top-width: 1px;
+        border-color: #000;
+    }
+
+    .purchased-product p:first-child {
+        width: 47%;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .purchased-product p:nth-child(2) {
+        margin-right: 0.6rem;
+        width: 16%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .purchased-product div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+    .purchased-product div input{
+        width: 1rem;
+        padding-left: 0.2rem;
+        user-select: none;
+        background-color: transparent;
+    }
+
+    .purchased-product img:nth-child(4) {
+        height: 2rem;
+        margin-left: 1rem;
+        width: 1.2rem;
+    }
+
+    /* 
+    ====================
+       purchased product
+    ====================
+    */
 
 
 
@@ -114,7 +165,6 @@
         src: url("../fonts/Poppins-Medium.ttf") format("truetype");
     }
 
-    
 
 }
 
@@ -144,6 +194,25 @@
     .title {
         @apply font-poppinsSemiBold text-[2rem] leading-[3rem] pt-40 lg:pt-12 pb-60;
     }
+
+    .overlay {
+        @apply fixed top-0 left-0 bottom-0 right-0 z-20;
+    }
+
+
+    /* <li class="flex items-center pl-1 mt-1 border-t border-black">
+            <p class="w-[47%] text-sm">${product.name}</p>
+            <p class="mr-[0.6rem] w-[16%] flex justify-items">${product.price}$</p>
+            <div class="flex justify-items w-[20%]">
+                <img onclick="addProductHandler(event)" src="./svg-icons/add.svg">
+                <input class="w-4 pl-[0.2rem] select-none bg-transparent" value="${product.number}" disabled type="text">
+                <img onclick="subtractProductNumber(event)" src="./svg-icons/remove.svg">
+            </div>
+            <img onclick="productRemover(event)" class="w-[1.2rem] h-8 ml-4" src="./svg-icons/close.svg">
+       </li> */
+
+
+
 
     /* 
     =============
