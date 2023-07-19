@@ -2,6 +2,9 @@
 
 This is a work sample of a simple e-commerce website that allows users to browse and buy products. The website is built with HTML, CSS, JavaScript, and Tailwind. It does not have a backend service and the payment functionality is simulated.
 
+# Credit
+
+ui of this project is made by this creator: [figma page](https://www.figma.com/file/NAnJcD6qQWkmfk4VXCvqCD/Cafe-Street---E-Commerce-Landing-Page-(Community)?type=design&t=VEfp0F5ih6jYPSpA-6)
 
 # Features
 
@@ -21,7 +24,7 @@ To run this project locally, you need to have Node.js and npm installed on your 
 *npm install*
 
 # Demo
-You can view a live demo of the website here: (https://dreamer474747.github.io/a-real-store-site/public/)
+You can view a live demo of the website here: [Demo](https://dreamer474747.github.io/a-real-store-site/public/)
 
 # License
 This project is licensed under the MIT License.
