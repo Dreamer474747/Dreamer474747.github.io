@@ -29,4 +29,6 @@ i used flexbox to make it full responsive(from 320px to higher widths). i have a
 
 i have used "Teko", "Roboto" and "Nunito" font for this project.
 
-# Contact me at my [Linkedin](https://linkedin.com/in/mobin-taataghi)
+# Contact me at my: 
+
+[Linkedin](https://linkedin.com/in/mobin-taataghi)
