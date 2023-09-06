@@ -15,12 +15,8 @@ the xd file of this project is Crafted by EA93.
 ![App Screenshot](https://raw.githubusercontent.com/Dreamer474747/Dreamer474747.github.io/main/light%20webshop/footer.JPG)
 
 # Demo
-https://dreamer474747.github.io/light%20webshop/
+[Demo](https://dreamer474747.github.io/light%20webshop/)
 
-# Contact me at:
+# Contact me at my: 
 
-[Telegram](https://t.me/Dreamer474747)
-
-[Instagram](https://instagram.com/mobintaataghi)
-
-[Linkedin](https://linkedin.com/in/mobin-taataghi-b6bb9b227)
+[Linkedin](https://linkedin.com/in/mobin-taataghi)
