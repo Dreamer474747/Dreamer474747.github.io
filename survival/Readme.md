@@ -21,7 +21,7 @@ this site is made with html, css and js.
 ![App Screenshot](https://github.com/Dreamer474747/Dreamer474747.github.io/blob/main/survival/footer.JPG?raw=true)
 
 # Demo
-https://dreamer474747.github.io/survival/
+[Demo](https://dreamer474747.github.io/survival/)
 
 # Methods
 
