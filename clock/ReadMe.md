@@ -8,12 +8,9 @@ i have to mention that the idea of "the remaining time of the day" is inspierd b
 ![App Screenshot](https://github.com/Dreamer474747/Dreamer474747.github.io/blob/main/clock/clock.PNG?raw=true)
 
 # Demo
-[Click here to see the project demo](https://dreamer474747.github.io/clock/)
+[Demo](https://dreamer474747.github.io/clock/)
 
-# Contact me at:
 
-[Telegram](https://t.me/Dreamer474747)
+# Contact me at my:
 
-[Instagram](https://instagram.com/mobintaataghi)
-
-[Linkedin](https://linkedin.com/in/mobin-taataghi-b6bb9b227)
+[Linkedin](https://linkedin.com/in/mobin-taataghi)
