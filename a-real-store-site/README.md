@@ -38,3 +38,9 @@ You can view a live demo of the website here: [Demo](https://dreamer474747.githu
 
 # License
 This project is licensed under the MIT License.
+
+# Contact me at my: 
+
+[Linkedin](https://linkedin.com/in/mobin-taataghi)
+
+
