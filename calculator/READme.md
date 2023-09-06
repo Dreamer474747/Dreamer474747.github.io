@@ -31,13 +31,16 @@ This calculator is released under the MIT License. Feel free to use, modify, and
 
 
 # Demo
-[Click here to see the project demo](https://dreamer474747.github.io/calculator/)
+[Demo](https://dreamer474747.github.io/calculator/)
 
 
-# Contact me at:
+# Contact me at my:
 
-[Telegram](https://t.me/Dreamer474747)
+[Linkedin](https://linkedin.com/in/mobin-taataghi)
 
-[Instagram](https://instagram.com/mobintaataghi)
 
-[Linkedin](https://linkedin.com/in/mobin-taataghi-b6bb9b227)
+
+
+
+
+
