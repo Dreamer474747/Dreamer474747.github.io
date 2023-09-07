@@ -10,7 +10,7 @@ the xd file of this project is Crafted by EA93.
 
 [you can see and download the ui itself from this link](https://dribbble.com/shots/13451758-Freebie-Time-Survival-FREE-XD-Template)
 
-# Things from my mini-project's ui that are different from the original ui
+# Things from my project's ui that are different from the original ui
 
 some of the arrows from the original ui are not in the good places and i just dont use them in the final project.
 
