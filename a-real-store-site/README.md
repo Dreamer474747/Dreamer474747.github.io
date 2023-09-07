@@ -20,7 +20,7 @@ ui of this project is made by this creator:
 
 [you can see the ui itself from this link](https://www.figma.com/file/NAnJcD6qQWkmfk4VXCvqCD/Cafe-Street---E-Commerce-Landing-Page-(Community)?type=design&node-id=0-1&mode=design&t=n2SxUoSpOZJuWDzv-0)
 
-# Things from my sample work's ui that are different from the original ui
+# Things from my project's ui that are different from the original ui
 
 
 
