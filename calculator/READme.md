@@ -46,7 +46,7 @@ Contributions to this calculator are welcome! If you have any ideas, suggestions
 
 ## License
 
-This calculator is released under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
+This calculator is released under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license. its just a simple calculator, sell it if you can.
 
 
 # Demo
@@ -56,6 +56,7 @@ This calculator is released under the MIT License. Feel free to use, modify, and
 # Contact me at my:
 
 [Linkedin](https://linkedin.com/in/mobin-taataghi)
+
 
 
 
