@@ -28,7 +28,7 @@ you can click on the numbers in the header or in the ADVICE section. the number 
 
 if you click on the arrow in the footer, it will get to the top of the page.
 
-the original ui is just made for desktop but i make it fully responsive. thats a huge change you know!
+the original ui is just made for desktop but i make it fully responsive. thats a huge difference you know!
 
 # Introduction
 
