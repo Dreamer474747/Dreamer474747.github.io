@@ -10,6 +10,26 @@ the xd file of this project is Crafted by EA93.
 
 [link to the creators dribble shot](https://dribbble.com/shots/13451758-Freebie-Time-Survival-FREE-XD-Template)
 
+# Things from my mini-project's ui that are different from the original ui
+
+some of the arrows from the original ui are not in the good places and i just dont use them in the final project.
+
+there are some texts that have rotated 90 degrees counterclockwise, which unfortunately did not make it into my final project. only one of those texts made it to the final project.
+
+i added a blur effect in the gallery part.
+
+some of the fonts used in the original ui are different from my final project.
+
+images in the "Popular challenges" part have a css effect were when you hover on them they get a little bigger. they also get a small shadow around them.
+
+when you hover on the x signs in my project, they rotate 90 degrees.
+
+you can click on the numbers in the header or in the ADVICE section. the number that you clicked on will have a bigger size compared to the other number or numbers and also the number will get a little red line under itself. this happens if you click on the red and white arrows(that are near to the numbers), too.
+
+if you click on the arrow in the footer, it will get to the top of the page.
+
+the original ui is just made for desktop but i make it fully responsive. so thats a huge change!
+
 # Introduction
 
 this site is made with html, css and js.
