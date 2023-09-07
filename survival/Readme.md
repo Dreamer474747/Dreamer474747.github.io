@@ -30,6 +30,8 @@ if you click on the arrow in the footer, it will get to the top of the page.
 
 the original ui is just made for desktop but i make it fully responsive. thats a huge difference you know!
 
+### i tried to list all of the differences between my project's ui and the original ui. you think i missed something? send me an email or message me in linkedin. i will definitely consider your message.
+
 # Introduction
 
 this site is made with html, css and js.
