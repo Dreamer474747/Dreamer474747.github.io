@@ -3,9 +3,9 @@
 This is a simple calculator web application developed using HTML, CSS, and JavaScript. It allows users to perform basic mathematical operations such as addition, subtraction, multiplication, and division. The calculator provides a user-friendly interface and delivers accurate results instantaneously.
 
 # Credit
-[link to the figma file](https://www.figma.com/file/0Rp5xCvv850Cw6YOHNG504/Calculator-(Community)?type=design&t=x2L1tWbwhMTxGpm2-6)
+[you can see the ui itself from this link](https://www.figma.com/file/0Rp5xCvv850Cw6YOHNG504/Calculator-(Community)?type=design&t=x2L1tWbwhMTxGpm2-6)
 
-[link to the creator of the figma file](https://www.figma.com/@julihabif)
+[you can find the creator's figma account if you click on this link](https://www.figma.com/@julihabif)
 
 # Things from my mini-project's ui that are different from the oreginal ui
 
