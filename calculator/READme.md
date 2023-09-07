@@ -26,6 +26,8 @@ This is a simple calculator web application developed using HTML, CSS, and JavaS
 
 well there you go, all of the differences that my mini-project has with its original ui which i found the ui on figma. check the credit section to see the ui creator's figma page and figma post(is it right to say "figma post" or "figma page"? never mind)
 
+### i tried to list all of the differences between my mini-project's ui and the original ui. you think i missed something? send me an email or message me in linkedin. i will definitely consider your message.
+
 ## Features
 
 1.**Responsive Design**: The calculator is designed to be responsive, ensuring that it adapts well to various screen sizes and devices. Whether you're using it on a desktop computer, laptop, tablet, or smartphone, the calculator will provide a seamless experience.
