@@ -9,7 +9,7 @@ the xd file of this project is Crafted by EA93.
 
 [you can find the creator's dribble account if you click on this link](https://dribbble.com/euroart93)
 
-# Things from my sample work's ui that are different from the original ui
+# Things from my project's ui that are different from the original ui
 
 the navbar is supposed to be in the bottom of the header(which it is) and stick to the top until the end of the page(which it is not).
 
