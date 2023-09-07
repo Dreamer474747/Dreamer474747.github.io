@@ -14,7 +14,11 @@ This is a work sample of a simple e-commerce website that allows users to browse
 
 # Credit
 
-ui of this project is made by this creator: [figma page](https://www.figma.com/file/NAnJcD6qQWkmfk4VXCvqCD/Cafe-Street---E-Commerce-Landing-Page-(Community)?type=design&t=VEfp0F5ih6jYPSpA-6)
+ui of this project is made by this creator:
+
+[you can find the creator's figma account if you click on this link](https://www.figma.com/@rauliqbal)
+
+[you can see the ui itslef from this link](https://www.figma.com/file/NAnJcD6qQWkmfk4VXCvqCD/Cafe-Street---E-Commerce-Landing-Page-(Community)?type=design&node-id=0-1&mode=design&t=n2SxUoSpOZJuWDzv-0)
 
 # Features
 
