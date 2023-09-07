@@ -42,6 +42,12 @@ There is a shopping cart functionality which the different ui of it is handled i
 
 the empty bullets in the swipeable slides of the "What they say about us" part have differnt color from the original ui.
 
+most of the carts in my project have different star rate's and different price's compared to the original ui.
+
+the "Cappuccino" and "4.8(stare)" and the "18K" thing in the header(around the cappuccino svg) have different shadow compared to the original ui.
+
+### i tried to list all of the differences between my project's ui and the original ui. you think i missed something? open an issue or send me an email or message me in linkedin. i will definitely consider your message.
+
 # Features
 
 ### 1.Responsive design that adapts to different screen sizes and devices
