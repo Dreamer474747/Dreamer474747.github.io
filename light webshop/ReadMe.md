@@ -25,6 +25,8 @@ the original ui is just made for desktop but i make it fully responsive. thats a
 
 also when you hover on the navbar items, they get a background color of pale orange and the text of the hovered item gets a pale white color, different from the alredy selected navbar item.
 
+### i tried to list all of the differences between my project's ui and the original ui. you think i missed something? send me an email or message me in linkedin. i will definitely consider your message.
+
 # Screen shots
 ![App Screenshot](https://raw.githubusercontent.com/Dreamer474747/Dreamer474747.github.io/main/light%20webshop/main.JPG)
 
