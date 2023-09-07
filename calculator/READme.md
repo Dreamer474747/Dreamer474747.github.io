@@ -7,11 +7,11 @@ This is a simple calculator web application developed using HTML, CSS, and JavaS
 
 [you can find the creator's figma account if you click on this link](https://www.figma.com/@julihabif)
 
-# Things from my mini-project's ui that are different from the oreginal ui
+# Things from my mini-project's ui that are different from the original ui
 
 ### 1.the font of the numbers is different from the ui.
 
-### 2.the + - ÷ × signs are different from the ui itself. in the oreginal ui they have there own shape but in my mini-project they are just manually entered by my keyboard, like - and +. for ÷ and ×, i have copied them from the internet since they don't have their own keyboard button(i dont like how the x button looks like. it does not look like multiplication sign to me).
+### 2.the + - ÷ × signs are different from the ui itself. in the original ui they have there own shape but in my mini-project they are just manually entered by my keyboard, like - and +. for ÷ and ×, i have copied them from the internet since they don't have their own keyboard button(i dont like how the x button looks like. it does not look like multiplication sign to me).
 
 ### 3.the font of the numbers and signs in the output and numbers in the input of the calculator are smaller compared to the ui itself. in addition, compared to the original ui, input and output numbers have less distance from their top and bottom and left and right.
 
