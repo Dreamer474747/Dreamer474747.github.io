@@ -5,9 +5,9 @@ This project is a web application that uses HTML, CSS, and JavaScript to create 
 # Credit
 the xd file of this project is Crafted by EA93.
 
-[link to the dribble shot](https://dribbble.com/shots/13926444-FREE-XD-Webshop-Template)
+[you can see and download the ui itself from this link](https://dribbble.com/shots/13926444-FREE-XD-Webshop-Template)
 
-[link to the dribble account](https://dribbble.com/euroart93)
+[you can find the creator's dribble account if you click on this link](https://dribbble.com/euroart93)
 
 # Things from my mini-project's ui that are different from the oreginal ui
 
