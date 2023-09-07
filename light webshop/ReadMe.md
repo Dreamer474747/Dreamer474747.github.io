@@ -21,6 +21,10 @@ in the header, if you click on the <> buttons, one of the numbers above it will 
 
 if you click on the <> buttons in the header, navbar items in the end of the header, the numbers on the card shaped thing in the beginning of the main part of the site, the four brands thing i explained erliar, the "ABOUT US SERVICES BRANDS REFERENCES CONTACT" links in the footer, and the facebook pinterest linkedin icons in the footer, the item you clicked on will stand out from the rest. the one you clicked on will be different from the others.
 
+the original ui is just made for desktop but i make it fully responsive. thats a huge difference you know!
+
+also when you hover on the navbar items, they get a background color of pale orange and the text of the hovered item gets a pale white color, different from the alredy selected navbar item.
+
 # Screen shots
 ![App Screenshot](https://raw.githubusercontent.com/Dreamer474747/Dreamer474747.github.io/main/light%20webshop/main.JPG)
 
