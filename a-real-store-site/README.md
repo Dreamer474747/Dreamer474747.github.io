@@ -46,7 +46,7 @@ most of the carts in my project have different star rate's and different price's
 
 the "Cappuccino" and "4.8(stare)" and the "18K" thing in the header(around the cappuccino svg) have different shadow compared to the original ui.
 
-### i tried to list all of the differences between my project's ui and the original ui. you think i missed something? open an issue or send me an email or message me in linkedin. i will definitely consider your message.
+### i tried to list all of the differences between my project's ui and the original ui. you think i missed something? send me an email or message me in linkedin. i will definitely consider your message.
 
 # Features
 
