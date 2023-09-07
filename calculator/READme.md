@@ -24,7 +24,7 @@ This is a simple calculator web application developed using HTML, CSS, and JavaS
 ### 7.numbers and signs(and dot) are not completely centerd vertically. you can kinda see that its not completely centerd horizontally too. the last thing im gonna add here is that the dot in the ui is supposed to be in the bottom left part of the button it is placed in. in my mini-project, the dot is in the bottom part of its button but its in the middle bottom of the button, not left bottom.
 
 
-well there you go, all of the differences that my mini-project has with its own ui which i found on figma. check the credit part to see the ui creator's page and the figma post of the ui that i used for this mini-project.(is it right to say "figma post"? never mind)
+well there you go, all of the differences that my mini-project has with its original ui which i found the ui on figma. check the credit section to see the ui creator's figma page and figma post(is it right to say "figma post" or "figma page"? never mind)
 
 ## Features
 
