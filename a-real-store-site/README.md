@@ -22,17 +22,35 @@ ui of this project is made by this creator:
 
 # Things from my project's ui that are different from the original ui
 
+there is an svg of coffee beans in the top right of the original ui. which does not exist in the final project of mine.
 
+the shadow of the carts in my project are a little differnt from the original ui.
+
+i added a little purchases cart thing which the users can see. how can they see it? well, if they click on the basket icon on the top right of the screen, they can see it.
+
+also when you buy a product, or add to the number of purchased products, a toast appears in the bottom right of the screen.
+
+the original ui is just made for desktop but i made my project fully responsive. thats a huge difference you know!
+
+instead of "K"(as a symbole of money), i used "$".
+
+there is a swipeable slides in the "What they say about us" of the site. that sliding thing did not exist in the original ui.
+
+there is a search option that allows users to find products by name. this makes my project's ui a little different from the original ui.
+
+There is a shopping cart functionality which the different ui of it is handled in the purchases cart thing i explained erliar.
+
+the empty bullets in the swipeable slides of the "What they say about us" part have differnt color from the original ui.
 
 # Features
 
 ### 1.Responsive design that adapts to different screen sizes and devices
 
-### 2.Product catalog with pagination
+### 2.Product catalog
 
 ### 3.Search option that allows users to find products by name
 
-### 4.Shopping cart functionality that persists across sessions
+### 4.There is a shopping cart functionality
 
 ### 5.Payment processing (simulated)
 
