@@ -2,6 +2,16 @@
 
 This is a work sample of a simple e-commerce website that allows users to browse and buy products. The website is built with HTML, CSS, JavaScript, and Tailwind. It does not have a backend service and the payment functionality is simulated.
 
+![App Screenshot](https://raw.githubusercontent.com/Dreamer474747/Dreamer474747.github.io/main/a-real-store-site/header.PNG)
+
+<br/>
+
+![App Screenshot](https://raw.githubusercontent.com/Dreamer474747/Dreamer474747.github.io/main/a-real-store-site/main.PNG)
+
+<br/>
+
+![App Screenshot](https://raw.githubusercontent.com/Dreamer474747/Dreamer474747.github.io/main/a-real-store-site/footer.PNG)
+
 # Credit
 
 ui of this project is made by this creator: [figma page](https://www.figma.com/file/NAnJcD6qQWkmfk4VXCvqCD/Cafe-Street---E-Commerce-Landing-Page-(Community)?type=design&t=VEfp0F5ih6jYPSpA-6)

@@ -3,9 +3,30 @@
 This is a simple calculator web application developed using HTML, CSS, and JavaScript. It allows users to perform basic mathematical operations such as addition, subtraction, multiplication, and division. The calculator provides a user-friendly interface and delivers accurate results instantaneously.
 
 # Credit
-[link to the figma file](https://www.figma.com/file/0Rp5xCvv850Cw6YOHNG504/Calculator-(Community)?type=design&t=x2L1tWbwhMTxGpm2-6)
+[you can see the ui itself from this link](https://www.figma.com/file/0Rp5xCvv850Cw6YOHNG504/Calculator-(Community)?type=design&t=x2L1tWbwhMTxGpm2-6)
 
-[link to the creator of the figma file](https://www.figma.com/@julihabif)
+[you can find the creator's figma account if you click on this link](https://www.figma.com/@julihabif)
+
+# Things from my mini-project's ui that are different from the original ui
+
+### 1.the font of the numbers is different from the ui.
+
+### 2.the + - ÷ × signs are different from the ui itself. in the original ui they have there own shape but in my mini-project they are just manually entered by my keyboard, like - and +. for ÷ and ×, i have copied them from the internet since they don't have their own keyboard button(i dont like how the x button looks like. it does not look like multiplication sign to me).
+
+### 3.the font of the numbers and signs in the output and numbers in the input of the calculator are smaller compared to the ui itself. in addition, compared to the original ui, input and output numbers have less distance from their top and bottom and left and right.
+
+### 4.the background has a different color.
+
+### 5.there is no +/- button. instead there is a ^ button which can raise a number to another numerical power.
+
+### 6.there is no % button. instead there is a AC button which clears both input and output of the calculator. also, C and AC have changed their places with each other.
+
+### 7.numbers and signs(and dot) are not completely centerd vertically. you can kinda see that its not completely centerd horizontally too. the last thing im gonna add here is that the dot in the ui is supposed to be in the bottom left part of the button it is placed in. in my mini-project, the dot is in the bottom part of its button but its in the middle bottom of the button, not left bottom.
+
+
+well there you go, all of the differences that my mini-project has with its original ui which i found the ui on figma. check the credit section to see the ui creator's figma page and figma post(is it right to say "figma post" or "figma page"? never mind)
+
+### i tried to list all of the differences between my mini-project's ui and the original ui. you think i missed something? send me an email or message me in linkedin. i will definitely consider your message.
 
 ## Features
 
@@ -27,17 +48,21 @@ Contributions to this calculator are welcome! If you have any ideas, suggestions
 
 ## License
 
-This calculator is released under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
+This calculator is released under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license. its just a simple calculator, sell it if you can.
 
 
 # Demo
-[Click here to see the project demo](https://dreamer474747.github.io/calculator/)
+[Demo](https://dreamer474747.github.io/calculator/)
 
 
-# Contact me at:
+# Contact me at my:
 
-[Telegram](https://t.me/Dreamer474747)
+[Linkedin](https://linkedin.com/in/mobin-taataghi)
 
-[Instagram](https://instagram.com/mobintaataghi)
 
-[Linkedin](https://linkedin.com/in/mobin-taataghi-b6bb9b227)
+
+
+
+
+
+
