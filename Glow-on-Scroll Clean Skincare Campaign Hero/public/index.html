@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>p5.js example</title>
+	<link rel="stylesheet" href="./style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+	<script defer src="../p5.min.js"></script>
+	<script defer src="../addons/p5.sound.min.js"></script>
+	<script defer src="./sketch.js"></script>
+	<link rel="icon" href="data:,">
+</head>
+
+<body>
+	<div class="welcome-layer">
+		<h3>Begin your glow journey.</h3>
+		<button class="welcome-layer-btn" >Start exploring</button>
+	</div>
+	
+	<div class="container">
+		<div class="visually-hidden" aria-hidden="false" role="region" aria-label="Animated Visual Description">
+			Soft, glowing pastel circles float gently over a gradient background. Clicking triggers soft ripple animations.
+		</div>
+		
+		<canvas role="img" class="my-canvas" aria-label="Animated pastel background with interactive soft-glow effects."></canvas>
+		
+		<div class="content-container">
+			<h1 id="hero-text">Gentle care. Real glow.</h1>
+			<button id="cta-btn">Explore the collection</button>
+		</div>
+	</div>
+	<audio class="visually-hidden" id="sound" autoplay muted ></audio>
+</body>
+
+</html>
